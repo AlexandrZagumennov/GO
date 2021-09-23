@@ -1,0 +1,39 @@
+.list__item {
+	background-color: #fff;
+	color: #1C1A1A;
+	font-weight: 700;
+	font-size: 24px;
+	padding: 30px 70px;
+	margin-bottom: 20px;
+	list-style-type: none;
+	position: relative;
+}
+
+.list__item:last-child {
+	margin-bottom: 0;
+}
+
+.list :nth-child(even) {
+	color: #fff;
+	background-color: #440F51;
+}
+
+.list :nth-child(even)::after {
+	content: " ";
+	background: url("img/open.svg") 0 0 no-repeat;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 20px;
+	right: 50px;
+}
+
+.list :nth-child(odd)::after {
+	content: " ";
+	background: url('img/open-purple.svg') 0 0 no-repeat;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 20px;
+	right: 50px;
+}

@@ -1,0 +1,14 @@
+.halls__hall-name {
+	display: block;
+	width: 220px;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bold;
+	font-size: 70px;
+	line-height: 80px;
+	text-transform: uppercase;
+}
+
+.halls__title {
+	margin-bottom: 60px;
+}
