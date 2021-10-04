@@ -1,0 +1,52 @@
+.games__title {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.games__list {
+	min-height: 496px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.games__list-item {
+	width: 380px;
+	height: 228px;
+	padding-left: 40px;
+	padding-top: 166px;
+	margin: auto;
+}
+
+.games__list-item_game_vr {
+	background: url(img/vr.png) no-repeat ;	
+}
+
+.games__list-item_game_audio {
+	background: url(img/audio.png) no-repeat;
+}
+
+.games__list-item_game_micro {
+	background: url(img/micro.png) no-repeat;
+}
+
+.games__list-item_game_games {
+	background: url(img/game.png) no-repeat;
+}
+
+.games__list-item_game_netflix {
+	background: url(img/netflix.png) no-repeat;
+}
+
+.games__list-item_game_sony {
+	background: url(img/game.png) no-repeat;
+}
+
+.games__description {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+

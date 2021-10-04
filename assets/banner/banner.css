@@ -1,5 +1,31 @@
-.banner__title {
-	margin-top: 107px;
+.banner__wrapper {
+	max-height: 682px;
+	background: url(img/game-over-stroke.svg) repeat-y 10px 0;
+	position: relative;
+	padding-bottom: 615px;
+}
+
+.banner__wrapper::after {
+	content: " ";
+	display: block;
+	width: 675px;
+	height: 762px;
+	background: url(img/header-bg-image.png) no-repeat bottom right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.banner__wrapper::before {
+	content: " ";
+	display: block;
+	width: 97px;
+	height: 97px;
+	background: url(img/down.svg) no-repeat;
+	position: absolute;
+	bottom: 90px;
+	right: 544px;
+	z-index: 2;
 }
 
 .banner__subtitle {
@@ -7,18 +33,72 @@
 	font-size: 28px;
 	line-height: 50px;
 	padding-left: 211px;
-	padding-bottom: 615px;
-	background: url(img/game-over-stroke.svg) repeat-y 10px 0;
-	position: relative;
+	margin-bottom: 22px;
 }
 
-.banner__subtitle::after {
-	content: " ";
-	display: block;
-	width: 675px;
-	height: 762px;
-	background: url(img/header-bg-image.png) no-repeat bottom right;
-	position: absolute;
-	top: -100px;
-	right: 0;
+.banner__row {
+	width: 371px;
+	margin-bottom: 170px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
 }
+
+.banner__row-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.banner__row-item_position_left {
+	width: 180px;
+	height: 196px;
+}
+
+.banner__row-item_position_right {
+	width: 159px;
+	height: 160px;
+}
+
+.banner__row-item-top-elem {
+	color: #CD06FF;
+}
+
+.banner__row-item-top-elem_size_big {
+	font-weight: 900;
+	font-size: 100px;
+	line-height: 141px;
+	margin-bottom: -11px;
+}
+
+.banner__row-item-top-elem_size_small {
+	font-weight: bold;
+	font-size: 68px;
+	padding: 0;
+	line-height: 92px;
+	text-transform: uppercase;	
+}
+
+.banner__row-item-bottom-elem {
+	font-size: 28px;
+	line-height: 32px;
+	text-align: center;
+}
+
+.banner__book {
+	display: block;
+	width: 374px;
+	height: 80px;
+	background: #6C0287;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 30px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+

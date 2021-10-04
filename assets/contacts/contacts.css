@@ -1,6 +1,12 @@
 .contacts {
-	padding-bottom: 100px;
 	background: linear-gradient(180deg, #1B1A1B -13.35%, #370A37 86.65%);
+	padding-bottom: 20px;
+}
+
+.contacts__wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 146px;
 }
 
 .contacts__item {
@@ -36,3 +42,13 @@
 	margin-bottom: 54px;
 }
 
+.contacts__wrapper_copywrite {
+	font-size: 14px;
+	line-height: 16px;
+	text-align: right;
+	margin-bottom: 0;
+}
+
+.contacts__wrapper-text {
+	margin-bottom: 6px;
+}
