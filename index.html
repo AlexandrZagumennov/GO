@@ -56,6 +56,7 @@
 						</div>
 					</div>
 					<a href="#" class="banner__book">забронировать</a>
+					<div class="banner__arrow-down"></div>
 				</div>
 			</div>
 		</section>
@@ -113,64 +114,88 @@
 			<div class="container">
 				<h2 class="section-title">Забронировать место</h2>
 				<form action="https://jsonplaceholder.typicode.com/posts" method="POST">
-					<h4 class="booking-form__subtitle">
-						Выбери зал
-					</h4>
+					<h4 class="booking-form__subtitle">Выбери зал</h4>
 					<div class="booking-form__fieldset-select-hall">
-						<input class="booking-form__input-select-hall" type="radio" name="select-hall-80s" id="input1">
+						<input class="booking-form__input-select-hall" type="radio" name="select-hall" value="80’s vibes" id="input1">
 						<label class="booking-form__label-select-hall" for="input1" >80’s vibes</label>
-						<input class="booking-form__input-select-hall" type="radio" name="select-hall-star-wars" id="input2">
+						<input class="booking-form__input-select-hall" type="radio" name="select-hall" value="Star wars" id="input2">
 						<label class="booking-form__label-select-hall" for="input2">Star wars</label>
-						<input class="booking-form__input-select-hall" type="radio" id="input3" name="select-hall-wild-west">
+						<input class="booking-form__input-select-hall" type="radio" id="input3" name="select-hall" value="wild west">
 						<label class="booking-form__label-select-hall" for="input3">wild west</label>
-						<input class="booking-form__input-select-hall" type="radio" id="input4" name="select-hall-neon-style">
+						<input class="booking-form__input-select-hall" type="radio" id="input4" name="select-hall" value="neon style">
 						<label class="booking-form__label-select-hall" for="input4">neon style</label>
 					</div>
 					<h4 class="booking-form__subtitle">Собери набор развлечений</h4>
 					<div class="booking-form__entertainments">
 						<div class="booking-form__entertainments-item">
 							<h4 class="booking-form__entertainments-legend">Приставка</h4>
-							<label class="booking-form__entertainments-label">
-								<input type="radio" name="video_console" value="play_station" class="booking-form__radio-btn">
-								Play Station
-							</label>
-							<label class="booking-form__entertainments-label">
-								<input type="radio" name="video_console" value="sega_mega_drive" class="booking-form__radio-btn">
-								Sega Mega Drive
-							</label>
-							<label class="booking-form__entertainments-label">
-								<input type="radio" name="video_console" value="x-box_one_s" class="booking-form__radio-btn">
-								X-box One S
-							</label>
-							<label class="booking-form__entertainments-label">
-								<input type="radio" name="video_console" value="dendy" class="booking-form__radio-btn">
-								Dendy
-							</label>
+							<ul class="booking-form__entertainments-list">
+							<li class="booking-form__entertainments-list-item">
+								<label class="booking-form__entertainments-label">
+									<input type="radio" name="video_console" value="play_station" class="booking-form__radio-btn" >
+									Play Station
+								</label>
+							</li>
+							<li class="booking-form__entertainments-list-item">
+								<label class="booking-form__entertainments-label">
+									<input type="radio" name="video_console" value="sega_mega_drive" class="booking-form__radio-btn">
+									Sega Mega Drive
+								</label>
+							</li>
+							<li class="booking-form__entertainments-list-item">
+								<label class="booking-form__entertainments-label">
+									<input type="radio" name="video_console" value="x-box_one_s" class="booking-form__radio-btn">
+									X-box One S
+								</label>
+							</li>
+							<li class="booking-form__entertainments-list-item">
+								<label class="booking-form__entertainments-label">
+									<input type="radio" name="video_console" value="dendy" class="booking-form__radio-btn">
+									Dendy
+								</label>
+							</li>
+							</ul>
 						</div>
 
 						<div class="booking-form__entertainments-item">
 							<h4 class="booking-form__entertainments-legend">Настольные игры</h4>
-							<label class="booking-form__entertainments-label">
-								<input type="checkbox" name="table_games" value="jenga" class="booking-form__check-box">Jenga
-							</label>
-							<label class="booking-form__entertainments-label">
-								<input type="checkbox" name="table_games" value="monopoly" class="booking-form__check-box">Monopoly
-							</label>
-							<label class="booking-form__entertainments-label">
-								<input type="checkbox" name="table_games" value="manchkin" class="booking-form__check-box">Манчкин
-							</label>
-							<label class="booking-form__entertainments-label">
-								<input type="checkbox" name="table_games" value="alias" class="booking-form__check-box">Alias
-							</label>
+							<ul class="booking-form__entertainments-list">
+								<li class="booking-form__entertainments-list-item">
+									<label class="booking-form__entertainments-label">
+										<input type="checkbox" name="table_games" value="jenga" class="booking-form__check-box">Jenga
+									</label>
+								</li>
+								<li class="booking-form__entertainments-list-item">
+									<label class="booking-form__entertainments-label">
+										<input type="checkbox" name="table_games" value="monopoly" class="booking-form__check-box">Monopoly
+									</label>
+								</li>
+								<li class="booking-form__entertainments-list-item">
+									<label class="booking-form__entertainments-label">
+										<input type="checkbox" name="table_games" value="manchkin" class="booking-form__check-box">Манчкин
+									</label>
+								</li>
+								<li class="booking-form__entertainments-list-item">
+									<label class="booking-form__entertainments-label">
+										<input type="checkbox" name="table_games" value="alias" class="booking-form__check-box">Alias
+									</label>
+								</li>
+							</ul>
 						</div>
 						<div class="booking-form__entertainments-item">
 							<h4 class="booking-form__entertainments-legend">Дополнительно</h4>
-							<label class="booking-form__entertainments-label">
-								<input type="checkbox" name="optionally" value="karaoke" class="booking-form__check-box">Караоке
-							</label>
-							<label class="booking-form__entertainments-label">
-								<input type="checkbox" name="optionally" value="vr" class="booking-form__check-box">VR
-							</label>
+							<ul class="booking-form__entertainments-list">
+								<li class="booking-form__entertainments-list-item">
+									<label class="booking-form__entertainments-label">
+										<input type="checkbox" name="optionally" value="karaoke" class="booking-form__check-box">Караоке
+									</label>
+								</li>
+								<li class="booking-form__entertainments-list-item">
+									<label class="booking-form__entertainments-label">
+										<input type="checkbox" name="optionally" value="vr" class="booking-form__check-box">VR
+									</label>
+								</li>
+							</ul>
 						</div>
 					</div>
 						
@@ -225,9 +250,6 @@
 
 					<button type="submit" class="booking-form__btn">Забронировать</button>
 				</form>
-
-
-
 			</div>
 		</section>
 		<section class="about">
@@ -285,12 +307,12 @@
 		<section class="faq">
 			<div class="container">
 				<h2 class="faq__title section-title">Частые вопросы</h2>
-				<ul class="faq__list list">
-					<li class="list__item">Можно ли забронировать комнату онлайн?</li>
-					<li class="list__item">Могут ли мне вернуть деньши за бронь?</li>
-					<li class="list__item">Какая комната самая популярная?</li>
-					<li class="list__item">Как получить VIP карту?</li>
-					<li class="list__item">Какая комната самая популярная?</li>
+				<ul class="faq__list">
+					<li class="faq__list-item">Можно ли забронировать комнату онлайн?</li>
+					<li class="faq__list-item">Могут ли мне вернуть деньши за бронь?</li>
+					<li class="faq__list-item">Какая комната самая популярная?</li>
+					<li class="faq__list-item">Как получить VIP карту?</li>
+					<li class="faq__list-item">Какая комната самая популярная?</li>
 				</ul>
 			</div>
 		</section>

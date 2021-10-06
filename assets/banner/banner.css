@@ -16,9 +16,7 @@
 	right: 0;
 }
 
-.banner__wrapper::before {
-	content: " ";
-	display: block;
+.banner__arrow-down {
 	width: 97px;
 	height: 97px;
 	background: url(img/down.svg) no-repeat;
@@ -26,6 +24,21 @@
 	bottom: 90px;
 	right: 544px;
 	z-index: 2;
+}
+
+.banner__arrow-down:hover {
+	content: " ";
+	background: url(img/down-hover.svg) no-repeat;
+}
+
+.banner__arrow-down:focus {
+	content: " ";
+	background: url(img/down-focus.svg) no-repeat;
+}
+
+.banner__arrow-down:active {
+	content: " ";
+	background: url(img/down-active.svg) no-repeat;
 }
 
 .banner__subtitle {
@@ -100,5 +113,8 @@
 	align-items: center;
 }
 
+.banner__book:hover, .banner__book:focus, .banner__book:active {
+	background: #840AA3;
+}
 
 

@@ -28,6 +28,17 @@
 	right: 50px;
 }
 
+.list :nth-child(even):hover::after {
+	content: " ";
+	background: url("img/open-hover.svg") 0 0 no-repeat;
+}
+
+.list :nth-child(even):active::after {
+	content: " ";
+	background: url("img/open-active.svg") 0 0 no-repeat;
+}
+
+
 .list :nth-child(odd)::after {
 	content: " ";
 	background: url('img/open-purple.svg') 0 0 no-repeat;
@@ -36,4 +47,14 @@
 	position: absolute;
 	top: 20px;
 	right: 50px;
+}
+
+.list :nth-child(odd):hover::after {
+	content: " ";
+	background: url("img/open-purple-hover.svg") 0 0 no-repeat;
+}
+
+.list :nth-child(odd):active::after {
+	content: " ";
+	background: url("img/close-purple-active.svg") 0 0 no-repeat;
 }

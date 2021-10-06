@@ -10,6 +10,7 @@
 	line-height: 28px;
 	text-align: center;
 	padding-bottom: 40px;
+	margin: 0;
 }
 
 .booking-form__fieldset-select-hall {
@@ -37,7 +38,23 @@
 }
 
 .booking-form__input-select-hall {
-	display: none;
+	position: absolute;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.booking-form__label-select-hall:hover {
+	background: #EADEED;
+}
+
+.booking-form__input-select-hall:focus + .booking-form__label-select-hall {
+	background: #EADEED;
+}
+
+.booking-form__input-select-hall:checked + .booking-form__label-select-hall {
+	background: #FFFFFF;
+	border: 3px solid #CD06FF;
 }
 
 .booking-form__entertainments {
@@ -51,10 +68,17 @@
 	width: 300px;
 }
 
+.booking-form__entertainments-list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
 .booking-form__entertainments-legend {
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 28px;
+	margin-top: 0;
 	margin-bottom: 23px;
 }
 
@@ -64,11 +88,6 @@
 	gap: 12px;
 	font-size: 22px;
 	line-height: 25px;
-	margin-bottom: 20px;
-}
-
-.booking-form__entertainments-label:last-child {
-	margin-bottom: 0;
 }
 
 .booking-form__radio-btn {
@@ -79,11 +98,18 @@
 	width: 27px;
 	height: 27px;
 	background: #fff;
+	position: relative;
 }
 
-.booking-form__radio-btn:checked {
-	border: 6px solid #fff;
-	background-color: #440F51;
+.booking-form__radio-btn:checked::after {
+	content: " ";
+	width: 33px;
+	height: 33px;
+	border: 1px solid #FFFFFF;
+	border-radius: 6px;
+	position: absolute;
+	top: -3px;
+	left: -3px;
 }
 
 .booking-form__check-box {
@@ -93,11 +119,18 @@
 	width: 25px;
 	height: 25px;
 	background: #fff;
+	position: relative;
 }
 
-.booking-form__check-box:checked {
-	border: 6px solid #fff;
-	background-color: #440F51;
+.booking-form__check-box:checked::after {
+	content: " ";
+	width: 33px;
+	height: 33px;
+	border: 1px solid #FFFFFF;
+	border-radius: 6px;
+	position: absolute;
+	top: -4px;
+	left: -4px;
 }
 
 .booking-form__select-data {
@@ -167,10 +200,14 @@
 }
 
 .booking-form__select-data-person-input {
-	display: block;
 	width: 100%;
 	height: 52px;
 	margin-bottom: 14px;
+}
+
+.booking-form__select-data-person-input:focus {
+	outline: none;
+	border: 2px solid #CD06FF;
 }
 
 .booking-form__select-data-person-input:last-child {
@@ -190,5 +227,11 @@
 	color: #6C0287;
 	margin-left: auto;
 	margin-right: 100px;
+}
+
+.booking-form__btn:hover, .booking-form__btn:focus, .booking-form__btn:active {
+	background-color: #6C0287;
+	color: #fff;
+	border: none;
 }
 

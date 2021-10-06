@@ -22,6 +22,10 @@
 	text-transform: uppercase;
 }
 
+.header__list-item:hover, .header__list-item:focus, .header__list-item:active {
+	color: #6C0287;
+}
+
 .header__list-item:last-child{
 	margin-right: 0;
 }
@@ -33,10 +37,14 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 3px solid #CD06FF;
+	border: 3px solid #6C0287;
 	border-radius: 10px;
 	font-weight: bold;
 	font-size: 22px;
 	line-height: 30px;
 	text-transform: uppercase;
+}
+
+.header__callback:hover, .header__callback:focus, .header__callback:active {
+	background: #6C0287;
 }
