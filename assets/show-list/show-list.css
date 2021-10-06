@@ -8,6 +8,11 @@
 	width: 580px;
 	height: 349px;
 	padding-top: 94px;
+	transition-duration: 0.5s;
+}
+
+.show-list__item:hover {
+	transform: scale(1.1);
 }
 
 .show-list__item_eightysvibes {

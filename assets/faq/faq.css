@@ -18,6 +18,11 @@
 	position: relative;
 }
 
+.faq__list-item::after {
+	content: " ";
+	transition: all 0.3s ease;
+}
+
 .faq__list :nth-child(even) {
 	color: #fff;
 	background-color: #440F51;

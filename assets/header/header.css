@@ -20,6 +20,7 @@
 	font-size: 22px;
 	line-height: 50px;
 	text-transform: uppercase;
+	transition: color 0.3s ease;
 }
 
 .header__list-item:hover, .header__list-item:focus, .header__list-item:active {
@@ -43,8 +44,9 @@
 	font-size: 22px;
 	line-height: 30px;
 	text-transform: uppercase;
+	transition: background-color 0.3s ease;
 }
 
 .header__callback:hover, .header__callback:focus, .header__callback:active {
-	background: #6C0287;
+	background-color: #6C0287;
 }

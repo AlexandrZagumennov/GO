@@ -17,6 +17,11 @@
 	padding-left: 40px;
 	padding-top: 166px;
 	margin: auto;
+	transition-duration: 0.5s;
+}
+
+.games__list-item:hover {
+	transform: scale(1.1);
 }
 
 .games__list-item_game_vr {

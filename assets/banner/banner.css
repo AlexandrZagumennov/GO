@@ -24,21 +24,25 @@
 	bottom: 90px;
 	right: 544px;
 	z-index: 2;
+	transition: background-image 0.5s ease;
 }
 
 .banner__arrow-down:hover {
 	content: " ";
-	background: url(img/down-hover.svg) no-repeat;
+	background-image: url(img/down-hover.svg);
+	background-repeat: no-repeat; 
 }
 
 .banner__arrow-down:focus {
 	content: " ";
-	background: url(img/down-focus.svg) no-repeat;
+	background-image: url(img/down-focus.svg);
+	background-repeat: no-repeat; 
 }
 
 .banner__arrow-down:active {
 	content: " ";
-	background: url(img/down-active.svg) no-repeat;
+	background-image: url(img/down-active.svg);
+	background-repeat: no-repeat; 
 }
 
 .banner__subtitle {
@@ -111,10 +115,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: background-color 0.3s ease;
 }
 
 .banner__book:hover, .banner__book:focus, .banner__book:active {
-	background: #840AA3;
+	background-color: #840AA3;
 }
 
 

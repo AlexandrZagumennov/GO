@@ -35,6 +35,7 @@
 	text-transform: uppercase;
 	color: #000000;
 	cursor: pointer;
+	transition: all 0.3s ease;
 }
 
 .booking-form__input-select-hall {
@@ -42,6 +43,7 @@
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	transition: all 0.3s ease;
 }
 
 .booking-form__label-select-hall:hover {
@@ -101,6 +103,11 @@
 	position: relative;
 }
 
+.booking-form__radio-btn::after {
+	content: " ";
+	transition: all 0.5s ease;
+}
+
 .booking-form__radio-btn:checked::after {
 	content: " ";
 	width: 33px;
@@ -120,6 +127,11 @@
 	height: 25px;
 	background: #fff;
 	position: relative;
+}
+
+.booking-form__check-box::after {
+	content: " ";
+	transition: all 0.5s ease;
 }
 
 .booking-form__check-box:checked::after {
@@ -227,6 +239,7 @@
 	color: #6C0287;
 	margin-left: auto;
 	margin-right: 100px;
+	transition: all 0.3s ease;
 }
 
 .booking-form__btn:hover, .booking-form__btn:focus, .booking-form__btn:active {
