@@ -25,17 +25,32 @@
 	display: block;
 	background: url(img/envelope.svg) no-repeat 0 50%;
 	margin-bottom: 40px;
+	transition: background-image 0.5s ease;
+}
+
+.contacts__item_email:hover {
+	background: url(img/envelope-hover.svg) no-repeat 0 50%;
 }
 
 .contacts__item_location {
 	background: url(img/location.svg) no-repeat 0 50%;
 	margin-bottom: 36px;
+	transition: background-image 0.5s ease;
+}
+
+.contacts__item_location:hover {
+	background: url(img/location-hover.svg) no-repeat 0 50%;
 }
 
 .contacts__item_phone {
 	display: block;
 	background: url(img/phone-call.svg) no-repeat 0 50%;
 	margin-bottom: 11px;
+	transition: background-image 0.5s ease;
+}
+
+.contacts__item_phone:hover {
+	background: url(img/phone-call-hover.svg) no-repeat 0 50%;
 }
 
 .contacts__title {
@@ -51,4 +66,8 @@
 
 .contacts__wrapper-text {
 	margin-bottom: 6px;
+}
+
+.contacts__link:hover {
+	text-decoration: underline;
 }
