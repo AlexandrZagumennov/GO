@@ -24,7 +24,7 @@
 }
 
 .header__list-item:hover, .header__list-item:focus, .header__list-item:active {
-	color: #6C0287;
+	color: var(--color-5, #6C0287);
 }
 
 .header__list-item:last-child{
@@ -38,7 +38,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 3px solid #6C0287;
+	border: 3px solid var(--color-5, #6C0287);
 	border-radius: 10px;
 	font-weight: bold;
 	font-size: 22px;
@@ -48,5 +48,5 @@
 }
 
 .header__callback:hover, .header__callback:focus, .header__callback:active {
-	background-color: #6C0287;
+	background-color: var(--color-5, #6C0287);
 }

@@ -78,7 +78,7 @@
 }
 
 .banner__row-item-top-elem {
-	color: #CD06FF;
+	color: var(--color-4, #CD06FF);
 }
 
 .banner__row-item-top-elem_size_big {
@@ -106,7 +106,7 @@
 	display: block;
 	width: 374px;
 	height: 80px;
-	background: #6C0287;
+	background: var(--color-5, #6C0287);
 	border-radius: 10px;
 	font-weight: bold;
 	font-size: 26px;
@@ -119,7 +119,7 @@
 }
 
 .banner__book:hover, .banner__book:focus, .banner__book:active {
-	background-color: #840AA3;
+	background-color: var(--color-6, #840AA3);
 }
 
 
