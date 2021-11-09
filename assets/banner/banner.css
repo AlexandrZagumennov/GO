@@ -106,6 +106,7 @@
 	display: block;
 	width: 374px;
 	height: 80px;
+	color: var(--color-1, #fff);
 	background: var(--color-5, #6C0287);
 	border-radius: 10px;
 	font-weight: bold;
@@ -116,6 +117,7 @@
 	justify-content: center;
 	align-items: center;
 	transition: background-color 0.3s ease;
+	border: none;
 }
 
 .banner__book:hover, .banner__book:focus, .banner__book:active {

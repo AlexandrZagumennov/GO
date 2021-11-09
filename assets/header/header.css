@@ -38,6 +38,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: var(--color-8, #1B1A1B);
+	color: var(--color-1, #fff);
 	border: 3px solid var(--color-5, #6C0287);
 	border-radius: 10px;
 	font-weight: bold;

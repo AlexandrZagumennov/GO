@@ -14,7 +14,7 @@
 	<header class="header">
 		<div class="container"> 
 			<div class="header__row">
-				<img src="assets/header/img/logo.svg" alt="Логотип Game Over" class="header__logo">
+				<img src="assets/header/img/logo.svg" alt="Логотип Game Over" class="header__logo" tabindex="0">
 				<nav class="header__navigation">
 					<ul class="header__list">
 						<li class="header__list-item">
@@ -34,7 +34,7 @@
 						</li>
 					</ul>
 				</nav>
-				<a href="#" class="header__callback">заказать звонок</a>
+				<button class="header__callback" aria-label="Вызов формы для заказа обратного звонка">заказать звонок</button>
 			</div>
 		</div>
 	</header>
@@ -42,47 +42,47 @@
 	<main>
 		<section class="banner">
 			<div class="container">
-				<h1 class="banner__title page__title">GAME OVER</h1>
+				<h1 class="banner__title page__title" tabindex="0">GAME OVER</h1>
 				<div class="banner__wrapper">
-					<p class="banner__subtitle">Новый формат игр и отдыха</p>
+					<p class="banner__subtitle" tabindex="0">Новый формат игр и отдыха</p>
 					<div class="banner__row">
 						<div class="banner__row-item banner__row-item_position_left">
-							<p class="banner__row-item-top-elem banner__row-item-top-elem_size_big">4</p>
-							<p class="banner__row-item-bottom-elem">Тематических зала</p>
+							<p class="banner__row-item-top-elem banner__row-item-top-elem_size_big" tabindex="0">4</p>
+							<p class="banner__row-item-bottom-elem" tabindex="0">Тематических зала</p>
 						</div>
 						<div class="banner__row-item banner__row-item_position_right">
-							<p class="banner__row-item-top-elem banner__row-item-top-elem_size_small">new</p>
-							<p class="banner__row-item-bottom-elem">Новейшая аппаратура</p>
+							<p class="banner__row-item-top-elem banner__row-item-top-elem_size_small" tabindex="0">new</p>
+							<p class="banner__row-item-bottom-elem" tabindex="0">Новейшая аппаратура</p>
 						</div>
 					</div>
-					<a href="#" class="banner__book">забронировать</a>
-					<div class="banner__arrow-down"></div>
+					<button class="banner__book" aria-label="Вызов формы для бронирования">забронировать</button>
+					<a href="#" class="banner__arrow-down" aria-label ="Кликните здесь, чтобы перейти к контенту ниже"></a>
 				</div>
 			</div>
 		</section>
 
 		<section class="games">
 			<div class="container">
-				<h2 class="games__title section-title">У нас есть все для классного 
+				<h2 class="games__title section-title"  tabindex="0">У нас есть все для классного 
 					отдыха с друзьями!</h2>
 				<ul class="games__list">
-					<li class="games__list-item games__list-item_game_vr">
+					<li class="games__list-item games__list-item_game_vr"  tabindex="0">
 						<p class="games__description">VR очки</p>
 					</li>
-					<li class="games__list-item games__list-item_game_audio">
+					<li class="games__list-item games__list-item_game_audio" tabindex="0">
 						<p class="games__description">Аудио-система 5.1 <br>
 							с отличным звуком</p>
 					</li>
-					<li class="games__list-item games__list-item_game_micro">
+					<li class="games__list-item games__list-item_game_micro" tabindex="0">
 						<p class="games__description">Караоке (4 микрофона)</p>
 					</li>
-					<li class="games__list-item games__list-item_game_games">
+					<li class="games__list-item games__list-item_game_games" tabindex="0">
 						<p class="games__description">Настольные игры</p>
 					</li>
-					<li class="games__list-item games__list-item_game_netflix">
+					<li class="games__list-item games__list-item_game_netflix" tabindex="0">
 						<p class="games__description">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
 					</li>
-					<li class="games__list-item games__list-item_game_sony">
+					<li class="games__list-item games__list-item_game_sony" tabindex="0">
 						<p class="games__description">РlаyStаtiоn 5</p>
 					</li>
 				</ul>
@@ -92,18 +92,18 @@
 
 		<section class="halls">
 			<div class="container">
-				<h2 class="halls__title section-title">Наши залы</h2>
+				<h2 class="halls__title section-title"  tabindex="0">Наши залы</h2>
 				<ul class="halls__list show-list">
-					<li class="show-list__item show-list__item_eightysvibes">
+					<li class="show-list__item show-list__item_eightysvibes" tabindex="0">
 						<h3 class="halls__hall-name">80’s vibes</h3>
 					</li>
-					<li class="show-list__item show-list__item_star-wars">
+					<li class="show-list__item show-list__item_star-wars" tabindex="0">
 						<h3 class="halls__hall-name">Star wars</h3>
 					</li>
-					<li class="show-list__item show-list__item_wild-west">
+					<li class="show-list__item show-list__item_wild-west" tabindex="0">
 						<h3 class="halls__hall-name">wild west</h3>
 					</li>
-					<li class="show-list__item show-list__item_neon-style">
+					<li class="show-list__item show-list__item_neon-style" tabindex="0">
 						<h3 class="halls__hall-name">neon style</h3>
 					</li>
 				</ul>
@@ -112,44 +112,44 @@
 
 		<section class="booking-form">
 			<div class="container">
-				<h2 class="section-title">Забронировать место</h2>
+				<h2 class="section-title"  tabindex="0">Забронировать место</h2>
 				<form action="https://jsonplaceholder.typicode.com/posts" method="POST">
-					<h4 class="booking-form__subtitle">Выбери зал</h4>
-					<div class="booking-form__fieldset-select-hall">
+					<h4 class="booking-form__subtitle" tabindex="0">Выбери зал</h4>
+					<div class="booking-form__fieldset-select-hall" tabindex="0">
 						<input class="booking-form__input-select-hall" type="radio" name="select-hall" value="80’s vibes" id="input1">
-						<label class="booking-form__label-select-hall" for="input1" >80’s vibes</label>
+						<label class="booking-form__label-select-hall" for="input1" tabindex="0">80’s vibes</label>
 						<input class="booking-form__input-select-hall" type="radio" name="select-hall" value="Star wars" id="input2">
-						<label class="booking-form__label-select-hall" for="input2">Star wars</label>
+						<label class="booking-form__label-select-hall" for="input2" tabindex="0">Star wars</label>
 						<input class="booking-form__input-select-hall" type="radio" id="input3" name="select-hall" value="wild west">
-						<label class="booking-form__label-select-hall" for="input3">wild west</label>
+						<label class="booking-form__label-select-hall" for="input3" tabindex="0">wild west</label>
 						<input class="booking-form__input-select-hall" type="radio" id="input4" name="select-hall" value="neon style">
-						<label class="booking-form__label-select-hall" for="input4">neon style</label>
+						<label class="booking-form__label-select-hall" for="input4" tabindex="0">neon style</label>
 					</div>
-					<h4 class="booking-form__subtitle">Собери набор развлечений</h4>
+					<h4 class="booking-form__subtitle" tabindex="0">Собери набор развлечений</h4>
 					<div class="booking-form__entertainments">
 						<div class="booking-form__entertainments-item">
-							<h4 class="booking-form__entertainments-legend">Приставка</h4>
+							<h4 class="booking-form__entertainments-legend"  tabindex="0">Приставка</h4>
 							<ul class="booking-form__entertainments-list">
 							<li class="booking-form__entertainments-list-item">
-								<label class="booking-form__entertainments-label">
+								<label class="booking-form__entertainments-label"  tabindex="0">
 									<input type="radio" name="video_console" value="play_station" class="booking-form__radio-btn" >
 									Play Station
 								</label>
 							</li>
 							<li class="booking-form__entertainments-list-item">
-								<label class="booking-form__entertainments-label">
+								<label class="booking-form__entertainments-label" tabindex="0">
 									<input type="radio" name="video_console" value="sega_mega_drive" class="booking-form__radio-btn">
 									Sega Mega Drive
 								</label>
 							</li>
 							<li class="booking-form__entertainments-list-item">
-								<label class="booking-form__entertainments-label">
+								<label class="booking-form__entertainments-label" tabindex="0">
 									<input type="radio" name="video_console" value="x-box_one_s" class="booking-form__radio-btn">
 									X-box One S
 								</label>
 							</li>
 							<li class="booking-form__entertainments-list-item">
-								<label class="booking-form__entertainments-label">
+								<label class="booking-form__entertainments-label" tabindex="0">
 									<input type="radio" name="video_console" value="dendy" class="booking-form__radio-btn">
 									Dendy
 								</label>
@@ -158,40 +158,40 @@
 						</div>
 
 						<div class="booking-form__entertainments-item">
-							<h4 class="booking-form__entertainments-legend">Настольные игры</h4>
+							<h4 class="booking-form__entertainments-legend"  tabindex="0">Настольные игры</h4>
 							<ul class="booking-form__entertainments-list">
 								<li class="booking-form__entertainments-list-item">
-									<label class="booking-form__entertainments-label">
+									<label class="booking-form__entertainments-label"  tabindex="0">
 										<input type="checkbox" name="table_games" value="jenga" class="booking-form__check-box">Jenga
 									</label>
 								</li>
 								<li class="booking-form__entertainments-list-item">
-									<label class="booking-form__entertainments-label">
+									<label class="booking-form__entertainments-label"  tabindex="0">
 										<input type="checkbox" name="table_games" value="monopoly" class="booking-form__check-box">Monopoly
 									</label>
 								</li>
 								<li class="booking-form__entertainments-list-item">
-									<label class="booking-form__entertainments-label">
+									<label class="booking-form__entertainments-label"  tabindex="0">
 										<input type="checkbox" name="table_games" value="manchkin" class="booking-form__check-box">Манчкин
 									</label>
 								</li>
 								<li class="booking-form__entertainments-list-item">
-									<label class="booking-form__entertainments-label">
+									<label class="booking-form__entertainments-label"  tabindex="0">
 										<input type="checkbox" name="table_games" value="alias" class="booking-form__check-box">Alias
 									</label>
 								</li>
 							</ul>
 						</div>
 						<div class="booking-form__entertainments-item">
-							<h4 class="booking-form__entertainments-legend">Дополнительно</h4>
+							<h4 class="booking-form__entertainments-legend"  tabindex="0">Дополнительно</h4>
 							<ul class="booking-form__entertainments-list">
 								<li class="booking-form__entertainments-list-item">
-									<label class="booking-form__entertainments-label">
+									<label class="booking-form__entertainments-label"  tabindex="0">
 										<input type="checkbox" name="optionally" value="karaoke" class="booking-form__check-box">Караоке
 									</label>
 								</li>
 								<li class="booking-form__entertainments-list-item">
-									<label class="booking-form__entertainments-label">
+									<label class="booking-form__entertainments-label"  tabindex="0">
 										<input type="checkbox" name="optionally" value="vr" class="booking-form__check-box">VR
 									</label>
 								</li>
@@ -199,24 +199,24 @@
 						</div>
 					</div>
 						
-					<h4 class="booking-form__subtitle">Выбери дату и время</h4>
+					<h4 class="booking-form__subtitle" tabindex="0">Выбери дату и время</h4>
 					<div class="booking-form__select-data">
 						<div class="booking-form__select-data-item">
 							<div class="booking-form__select-data-row booking-form__select-data-row_data">
 								<div class="booking-form__select-data-elem booking-form__select-data-elem_data">
-									<label class="booking-form__select-data-label">
+									<label class="booking-form__select-data-label" tabindex="0">
 										Дата
 									</label>
 								</div>
 								<div class="booking-form__select-data-elem booking-form__select-data-elem_data">
-									<label class="booking-form__select-data-label">
+									<label class="booking-form__select-data-label" tabindex="0">
 										Время
 									</label>
 								</div>
 							</div>
 							<div class="booking-form__select-data-row">
 								<div class="booking-form__select-data-elem booking-form__select-data-elem_number">
-									<label class="booking-form__select-data-label">
+									<label class="booking-form__select-data-label"  tabindex="0">
 										Сколько человек
 									</label>
 								</div>
@@ -248,16 +248,16 @@
 						</div>
 					</div>
 
-					<button type="submit" class="booking-form__btn">Забронировать</button>
+					<button type="submit" class="booking-form__btn" aria-label="Для бронирования нажмите здесь">Забронировать</button>
 				</form>
 			</div>
 		</section>
 
 		<section class="about">
 			<div class="container">
-				<h2 class="about__title section-title">О нас</h2>
+				<h2 class="about__title section-title"  tabindex="0">О нас</h2>
 				<div class="about__container">
-					<div class="about__item about__item_content">
+					<div class="about__item about__item_content"  tabindex="0">
 						<p class="about__text section-text">Для наших гостей мы создали концептуально новое игровое
 							пространство виртуальной
 							реальности в
@@ -280,23 +280,23 @@
 
 		<section class="feedback">
 			<div class="container">
-				<h2 class="feedback__title section-title">отзывы посетителей</h2>
+				<h2 class="feedback__title section-title"  tabindex="0">отзывы посетителей</h2>
 				<ul class="feedback__list">
-					<li class="feedback__item">
+					<li class="feedback__item"  tabindex="0">
 						<cite class="feedback__cite feedback__cite_person_ms">Макс Самойлов</cite>
 						<blockquote class="feedback__blockquote">
 							Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто
 							бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!
 						</blockquote>
 					</li>
-					<li class="feedback__item">
+					<li class="feedback__item"  tabindex="0">
 						<cite class="feedback__cite feedback__cite_person_og">Оксана Григорьева</cite>
 						<blockquote class="feedback__blockquote">
 							Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас
 							в городе больше нет подобных заведений
 						</blockquote>
 					</li>
-					<li class="feedback__item">
+					<li class="feedback__item"  tabindex="0">
 						<cite class="feedback__cite feedback__cite_person_ny">Никита Ященко</cite>
 						<blockquote class="feedback__blockquote">
 							Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле
@@ -309,13 +309,13 @@
 
 		<section class="faq">
 			<div class="container">
-				<h2 class="faq__title section-title">Частые вопросы</h2>
+				<h2 class="faq__title section-title" tabindex="0">Частые вопросы</h2>
 				<ul class="faq__list">
-					<li class="faq__list-item">Можно ли забронировать комнату онлайн?</li>
-					<li class="faq__list-item">Могут ли мне вернуть деньши за бронь?</li>
-					<li class="faq__list-item">Какая комната самая популярная?</li>
-					<li class="faq__list-item">Как получить VIP карту?</li>
-					<li class="faq__list-item">Какая комната самая популярная?</li>
+					<li class="faq__list-item"  tabindex="0">Можно ли забронировать комнату онлайн?</li>
+					<li class="faq__list-item"  tabindex="0">Могут ли мне вернуть деньши за бронь?</li>
+					<li class="faq__list-item"  tabindex="0">Какая комната самая популярная?</li>
+					<li class="faq__list-item"  tabindex="0">Как получить VIP карту?</li>
+					<li class="faq__list-item"  tabindex="0">Какая комната самая популярная?</li>
 				</ul>
 			</div>
 		</section>
@@ -323,42 +323,42 @@
 	
 	<footer class="contacts">
 		<div class="container">
-			<h2 class="contacts__title section-title">Контакты</h2>
+			<h2 class="contacts__title section-title"  tabindex="0">Контакты</h2>
 			<div class="contacts__wrapper">
 				<div class="contacts__col">
-					<div class="contacts__item contacts__item_location">
+					<address class="contacts__item contacts__item_location"  tabindex="0" aria-label="Адрес">
 						г. Москва ул. Аквамарина, 16
-					</div>
-					<a href="tel:+8950930-28-93" class="contacts__item contacts__item_phone">8 (950) 930 - 28 - 93</a>
-					<a href="mailto:gameover@gmail.com" class="contacts__item contacts__item_email">GameOver@gmail.com</a>
+					</address>
+					<a href="tel:+8950930-28-93" class="contacts__item contacts__item_phone" tabindex="0" aria-label="Телефон 8 (950) 930 - 28 - 93">8 (950) 930 - 28 - 93</a>
+					<a href="mailto:gameover@gmail.com" class="contacts__item contacts__item_email" tabindex="0">GameOver@gmail.com</a>
 					<div class="contacts__item social">
-						<ul class="social__list">
-							<li class="social__item">
-								<a href="#" target="_blank" class="social__link social__link_inst"></a>
+						<ul class="social__list" tabindex="0" aria-label="Список соцсетей">
+							<li class="social__item" tabindex="0" >
+								<a href="#" target="_blank" class="social__link social__link_inst" aria-label="Инстаграмм"></a>
 							</li>
-							<li class="social__item">
-								<a href="#" target="_blank" class="social__link social__link_vk"></a>
+							<li class="social__item" tabindex="0" >
+								<a href="#" target="_blank" class="social__link social__link_vk" aria-label="Вконтакте"></a>
 							</li>
-							<li class="social__item">
-								<a href="#" target="_blank" class="social__link social__link_fb"></a>
+							<li class="social__item" tabindex="0" >
+								<a href="#" target="_blank" class="social__link social__link_fb" aria-label="Список фэйсбук"></a>
 							</li>
-							<li class="social__item">
-								<a href="#" target="_blank" class="social__link social__link_telegram"></a>
+							<li class="social__item" tabindex="0" >
+								<a href="#" target="_blank" class="social__link social__link_telegram" aria-label="Телеграм"></a>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="contacts__col">
+				<div class="contacts__col" tabindex="0">
 					<img src="assets/contacts/img/map.png" alt="Скриншот карты с расположением Game Over" width="680" height="274">
 				</div>
 			</div>
 			<div class="contacts__wrapper contacts__wrapper_copywrite">
-				<div class="contacts__wrapper-item">
+				<div class="contacts__wrapper-item" tabindex="0">
 					<p>&copy; Game Over, 2021</p>
 				</div>
 				<div class="contacts__wrapper-item">
-					<p class="contacts__wrapper-text">Design by Anastasia Ilina</p>
-					<a href="mailto:ilina9825@gmail.com" class="contacts__link">ilina9825@gmail.com</a>
+					<p class="contacts__wrapper-text" tabindex="0">Design by Anastasia Ilina</p>
+					<a href="mailto:ilina9825@gmail.com" class="contacts__link" tabindex="0">ilina9825@gmail.com</a>
 				</div>
 			</div>
 		</div>
