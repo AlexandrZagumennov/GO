@@ -8,7 +8,20 @@
 	gap: 20px;
 }
 
-.faq__list-item {
+.faq__list-button {
+	display: flex;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.faq__list-text {
+	padding-top: 24px;
+	cursor: pointer;
+}
+
+.faq__list-item:nth-child(odd) {
 	background-color: var(--color-1, #fff);
 	color: var(--color-10, #1C1A1A);
 	font-weight: 700;
@@ -18,52 +31,73 @@
 	position: relative;
 }
 
-.faq__list-item::after {
-	content: " ";
-	transition: all 0.3s ease;
+.faq__list-item:nth-child(odd) .faq__item-icon {
+	content: ' ';
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 20px;
+	right: 70px;
+	background: url(../faq/img/open-purple.svg) no-repeat;
+	transition: 0.4s;
 }
 
-.faq__list :nth-child(even) {
+.faq__list-item:nth-child(odd)
+.faq__item-icon:hover {
+	background: url(../faq/img/open-purple-hover.svg) no-repeat;
+}
+
+.faq__list-item:nth-child(odd)
+.faq__item-icon_active {
+	content: ' ';
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 20px;
+	right: 70px;
+	background:url(../faq/img/close-purple-active.svg) no-repeat;
+}
+
+.faq__list-item:nth-child(even) {
 	color: var(--color-1, #fff);
 	background-color: var(--color-9, #440F51);
+	font-weight: 700;
+	font-size: 24px;
+	padding: 30px 70px;
+	list-style-type: none;
+	position: relative;
 }
 
-.faq__list :nth-child(even)::after {
-	content: " ";
-	background: url("img/open.svg") 0 0 no-repeat;
+.faq__list-item:nth-child(even) .faq__item-icon {
+	content: ' ';
 	width: 50px;
 	height: 50px;
 	position: absolute;
 	top: 20px;
-	right: 50px;
+	right: 70px;
+	background: url(../faq/img/open.svg) no-repeat;
+	transition: 0.4s;
 }
 
-.faq__list :nth-child(even):hover::after {
-	content: " ";
-	background: url("img/open-hover.svg") 0 0 no-repeat;
+.faq__list-item:nth-child(even)
+.faq__item-icon:hover {
+	background: url(../faq/img/open-hover.svg) no-repeat;
 }
 
-.faq__list :nth-child(even):active::after {
-	content: " ";
-	background: url("img/open-active.svg") 0 0 no-repeat;
-}
-
-.faq__list :nth-child(odd)::after {
-	content: " ";
-	background: url('img/open-purple.svg') 0 0 no-repeat;
+.faq__list-item:nth-child(even)
+.faq__item-icon_active {
+	content: ' ';
 	width: 50px;
 	height: 50px;
 	position: absolute;
 	top: 20px;
-	right: 50px;
+	right: 70px;
+	background:url(../faq/img/close-active.svg) no-repeat;
 }
 
-.faq__list :nth-child(odd):hover::after {
-	content: " ";
-	background: url("img/open-purple-hover.svg") 0 0 no-repeat;
-}
 
-.faq__list :nth-child(odd):active::after {
-	content: " ";
-	background: url("img/close-purple-active.svg") 0 0 no-repeat;
-}
+
+
+
+
+
