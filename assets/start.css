@@ -70,11 +70,19 @@ iframe {
 }
 
 .container {
-	max-width: 1180px;
+	max-width: 1300px;
 	margin: 0 auto;
+	padding: 0 60px;
 }
 
 section {
 	padding-bottom: 100px;
 }
 
+@media (max-width: 1300px) {
+	.container {
+		max-width: calc(320px + (1300 - 320) * ((100vw - 320px) / (1300 - 320)));
+		padding-left: calc(20px + (60 - 20) * ((100vw - 320px) / (1300 - 320)));
+		padding-right: calc(20px + (60 - 20) * ((100vw - 320px) / (1300 - 320)));
+	}
+}

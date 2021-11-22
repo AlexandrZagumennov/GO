@@ -1,14 +1,5 @@
-// Аккордеон
-$('.faq__list').accordion({
-	active: true,
-	collapsible: true,
-	heightStyle: 'content',
-	icons: {
-		header: 'faq__item-icon',
-		activeHeader: 'faq__item-icon faq__item-icon_active'
-	}
-});
 
+/*
 // Яндекс - карта
 ymaps.ready(init);
 function init() {
@@ -38,3 +29,4 @@ function init() {
 	myMap.controls.remove('zoomControl'); // удаляем контрол зуммирования
 	myMap.controls.remove('rulerControl'); // удаляем контрол правил
 };
+*/

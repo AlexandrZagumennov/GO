@@ -4,4 +4,11 @@
 	font-size: 200px;
 	line-height: 100%;
 	letter-spacing: -0.1em;
+	text-align: center;
+}
+
+@media (max-width: 1300px) {
+	.page__title {
+		font-size: calc(46px + (200 - 46) * ((100vw - 320px) / (1300 - 320)));
+	}
 }
