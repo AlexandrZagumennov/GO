@@ -85,4 +85,8 @@ section {
 		padding-left: calc(20px + (60 - 20) * ((100vw - 320px) / (1300 - 320)));
 		padding-right: calc(20px + (60 - 20) * ((100vw - 320px) / (1300 - 320)));
 	}
+
+	section {
+		padding-bottom: calc(30px + (100 - 30) * ((100vw - 320px) / (1300 - 320)));
+	}
 }

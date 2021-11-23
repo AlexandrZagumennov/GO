@@ -1,14 +1,28 @@
+.games {
+	padding-bottom: calc(100px + 70px);
+}
+
 .games__title {
 	max-width: 700px;
 	margin: 0 auto;
 }
 
 .games__list {
-	min-height: 496px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	gap: 20px;
+	column-gap: 20px;
+	row-gap: 40px;
+}
+
+.games__list-col {
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
+}
+
+.games__list-col:nth-child(2) {
+	padding-top: 70px;
 }
 
 .games__list-item {
@@ -16,36 +30,45 @@
 	height: 228px;
 	padding-left: 40px;
 	padding-top: 166px;
-	margin: auto;
 	transition-duration: 0.5s;
 }
 
 .games__list-item:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 .games__list-item_game_vr {
-	background: url(img/vr.png) no-repeat ;	
+	background: url(img/vr.png) no-repeat;	
+	background-size: 100% 100%;
 }
 
 .games__list-item_game_audio {
 	background: url(img/audio.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	top: 70px;
 }
 
 .games__list-item_game_micro {
 	background: url(img/micro.png) no-repeat;
+	background-size: 100% 100%;
 }
 
 .games__list-item_game_games {
 	background: url(img/game.png) no-repeat;
+	background-size: 100% 100%;
 }
 
 .games__list-item_game_netflix {
 	background: url(img/netflix.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	top: 70px;
 }
 
 .games__list-item_game_sony {
-	background: url(img/game.png) no-repeat;
+	background: url(img/sony.png) no-repeat;
+	background-size: 100% 100%;
 }
 
 .games__description {
@@ -54,4 +77,60 @@
 	line-height: 28px;
 }
 
+@media (max-width: 1300px) {
+	.games {
+		padding-bottom: calc(153px + (170 - 153) * ((100vw - 1024px) / (1300 - 1024)));
+	}
 
+	.games__list {
+		row-gap: calc(30px + (40 - 30) * ((100vw - 1024px) / (1300 - 1024)));
+	}
+
+	.games__list-item {
+		width: calc(287px + (380 - 287) * ((100vw - 1024px) / (1300 - 1024)));
+		height: calc(172px + (228 - 172) * ((100vw - 1024px) / (1300 - 1024)));
+		padding-left: calc(20px + (40 - 20) * ((100vw - 1024px) / (1300 - 1024))); 
+		padding-top: calc(114px + (166 - 114) * ((100vw - 1024px) / (1300 - 1024))); 
+	}
+
+	.games__list-item_game_audio {
+		top: calc(53px + (70 - 53) * ((100vw - 1024px) / (1300 - 1024)));
+	}
+
+	.games__list-item_game_netflix {
+		padding-top: calc(83px + (166 - 83) * ((100vw - 1024px) / (1300 - 1024))); 
+		padding-right: calc(20px + (0 - 114) * ((100vw - 1024px) / (1300 - 1024))); 
+		top: calc(53px + (70 - 53) * ((100vw - 1024px) / (1300 - 1024)));
+	}
+
+}
+
+@media (max-width: 1000px) {
+	.games {
+		padding-bottom: calc(30px + (100 - 30) * ((100vw - 320px) / (1300 - 320)));
+	}
+
+	.games__list {
+		column-gap: calc(10px + (20 - 10) * ((100vw - 320px) / (1000 - 320))); 
+		row-gap: calc(10px + (20 - 10) * ((100vw - 320px) / (1000 - 320))); 
+		justify-content: center;
+	}
+	
+	.games__list-item  {
+		width: calc(135px + (400 - 135) * ((100vw - 320px) / (1000 - 320)));
+		height: calc(75px + (240 - 75) * ((100vw - 320px) / (1000 - 320)));
+		padding-left: calc(10px + (30 - 10) * ((100vw - 320px) / (1000 - 320))); 
+		padding-right: calc(10px + (30 - 10) * ((100vw - 320px) / (1000 - 320)));
+		padding-top: calc(30px + (132 - 30) * ((100vw - 320px) / (1000 - 320)));
+	}
+
+	.games__list-item_game_audio,
+	.games__list-item_game_netflix {
+		position: static;
+	}
+
+	.games__description {
+		font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1000 - 320)));
+		line-height: calc(14px + (28 - 14) * ((100vw - 320px) / (1000 - 320)));
+	}
+}
