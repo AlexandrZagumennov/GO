@@ -146,53 +146,51 @@
 }
 
 .booking-form__select-data {
-	width: 1080px;
-	padding-left: 100px;
-	padding-bottom: 40px;
+	padding: 0 100px;
+	display: flex;
+	gap: 50px;
+	margin-bottom: 40px;
+}
+
+.booking-form__select-data-col_left {
+	padding-top: 12px;
+	width: 300px;
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
+	flex-direction: column;
 }
 
-.booking-form__select-data-item {
+.booking-form__select-data-row {
 	width: 300px;
-}
-
-.booking-form__select-data-item:nth-child(2) {
-	width: 280px;
-}
-
-.booking-form__select-data-elem {
 	height: 52px;
-	background: var(--color-1, #fff);
+	display: flex;
+	justify-content: space-between;
+}
+
+.booking-form__data,
+.booking-form__time,
+.booking-form__count-person {
+	display: block;
+	width: 134px;
+	height: 52px;
 	padding-top: 12px;
 	padding-left: 20px;
+	font-size: 18px;
+	line-height: 28px;
+	background-color: var(--color-1, #fff);
+	color: var(--color-2, #000);
 	position: relative;
 }
 
-.booking-form__select-data-elem_data{
-	width: 134px;
-}
-
-.booking-form__select-data-elem_number {
+.booking-form__count-person {
 	width: 300px;
 }
 
-.booking-form__select-data-row_data {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 36px;
-}
-
-.booking-form__select-data-label {
-	font-size: 18px;
-	line-height: 28px;
-	color: #211E1E;
-}
-
-.booking-form__select-data-label::after {
+.booking-form__data::after,
+.booking-form__time::after,
+.booking-form__count-person::after {
 	content: " ";
-	display: inline-block;
+	display: block;
 	width: 21px;
 	height: 15px;
 	cursor: pointer;
@@ -202,35 +200,47 @@
 	right: 18px;
 }
 
-.booking-form__select-data-person-label {
+.booking-form__select-data-col_middle{
+	width: 280px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 18px;
+}
+
+.booking-form__person-label {
 	display: block;
-	font-weight: bold;
 	font-size: 14px;
 	line-height: 16px;
-	color: var(--color-1, #fff);
-	margin-bottom: 6px;
+	height: 74px;
 }
 
-.booking-form__select-data-person-input {
+.booking-form__person-input {
+	display: block;
 	width: 100%;
 	height: 52px;
-	margin-bottom: 14px;
-}
-
-.booking-form__select-data-person-input:focus {
+	background-color: var(--color-1, #fff);
 	outline: none;
-	border: 2px solid var(--color-4, #CD06FF);
+	border: none;
 }
 
-.booking-form__select-data-person-input:last-child {
-	margin-bottom: 0;
+.booking-form__select-data-col_right {
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 18px;
 }
 
 .booking-form__btn {
 	display: block;
 	width: 300px;
 	height: 60px;
-	background: var(--color-1, #fff);
+	background-color: var(--color-1, #fff);
+	box-shadow: 0 0 10px 2px var(--color-1, #fff);
+	border: none;
 	border-radius: 10px;
 	font-weight: bold;
 	font-size: 22px;
@@ -248,3 +258,175 @@
 	border: none;
 }
 
+@media (max-width: 1366px) {
+	.booking-form__subtitle {
+		padding-bottom: 26px;
+	}
+
+	.booking-form__entertainments {
+		padding-left: 0;
+	}
+
+	.booking-form__select-data  {
+		padding: 0;
+		margin-bottom: 50px;
+		justify-content: space-between;
+	}
+
+	.booking-form__label-select-hall {
+		width: 180px;
+		height: 44px;
+		font-size: 20px;
+		line-height: 24px;
+		padding-top: 10px;
+		border-radius: 6px;
+	}
+
+	.booking-form__btn {
+		width: 254px;
+		height: 50px;
+		font-size: 18px;
+		line-height: 24px;
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 1000px) {
+	.booking-form {
+		padding: 60px 0;
+	}
+
+	.booking-form__subtitle {
+		padding-bottom: 30px;
+	}
+
+	.booking-form__entertainments {
+		flex-wrap: wrap;
+		row-gap: 32px;
+		padding-bottom: 50px;
+	}
+
+	.booking-form__fieldset-select-hall {
+		padding-bottom: 50px;
+	}
+
+	.booking-form__label-select-hall {
+		width: 150px;
+		height: 38px;
+		font-size: 16px;
+		line-height: 20px;
+		padding-top: 9px;
+	}
+
+	.booking-form__radio-btn,
+	.booking-form__check-box {
+		width: 40px;
+		height: 40px;
+	}
+
+	.booking-form__btn {
+		width: 300px;
+		height: 60px;
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	.booking-form__select-data {
+		flex-wrap: wrap;
+		margin-bottom: 48px;
+	}
+
+	.booking-form__select-data-col_left {
+		width: 100%;
+		flex-direction: row;
+	}
+}
+
+@media (max-width: 768px) {
+	.booking-form {
+		padding: 50px 0;
+	}
+
+	.booking-form__fieldset-select-hall {
+		flex-wrap: wrap;
+		column-gap: 20px;
+		row-gap: 14px;
+		justify-content: center;
+	}
+
+	.booking-form__select-data {
+		flex-wrap: nowrap;
+		flex-direction: column;
+		align-items: center;
+		gap: 35px;
+	}
+
+	.booking-form__select-data-col_left {
+		flex-direction: column;
+		row-gap: 15px;
+		width: 280px;	
+	}
+
+	.booking-form__select-data-col_right, 
+	.booking-form__select-data-row,
+	.booking-form__count-person {
+		width: 280px;
+	}
+
+	.booking-form__btn {
+		width: 280px;
+		height: 60px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 480px) {
+	.booking-form {
+		padding: 30px 0;
+	}
+
+	.booking-form__subtitle {
+		font-size: 14px;
+		line-height: 18px;	
+		padding-bottom: 15px;
+	}
+
+	.booking-form__fieldset-select-hall {
+		padding-bottom: 30px;
+	}
+
+	.booking-form__label-select-hall {
+		width: 130px;
+		height: 30px;
+		font-size: 14px;
+		line-height: 18px;
+		padding-top: 6px;
+		border-radius: 4px;
+	}
+
+	.booking-form__entertainments {
+		padding-bottom: 30px;
+		row-gap: 25px;
+	}
+
+	.booking-form__entertainments-legend {
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 15px;
+	}
+
+	.booking-form__entertainments-label {
+		font-size: 16px;
+		line-height: 18px;
+	}
+
+	.booking-form__entertainments-list {
+		gap: 15px;
+	}
+
+	.booking-form__radio-btn,
+	.booking-form__check-box {
+		width: 30px;
+		height: 30px;
+	}
+}
