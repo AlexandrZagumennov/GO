@@ -1,0 +1,124 @@
+.form-callback {
+	width: 600px;
+	background: var(--color-9, #440F51);
+	padding: 60px 0 80px 0;
+	text-align: center;
+	position: relative;
+}
+
+.form-callback__close {
+	width: 42px;
+	height: 42px;
+	background: url(../../img/form-callback/form-callback-close.svg) no-repeat;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	cursor:pointer;
+	transition: all 0.3s ease;
+}
+
+.form-callback__close:hover {
+	transform: scale(0.9);
+}
+
+.form-callback__close:focus,
+.form-callback__close:active {
+	transform: scale(0.8);
+}
+
+.form-callback__title {
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+.form-callback__input-wrapper {
+	margin: 0 auto;
+	max-width: 280px;
+}
+
+.form-callback__label {
+	display: block;
+	text-align: left;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 6px;
+}
+
+.form-callback__input {
+	width: 100%;
+	height: 74px;
+	outline: none;
+	border: none;
+	margin-bottom: 40px;
+}
+
+.form-callback__input:focus,
+.form-callback__input:active {
+	border: 2px solid var(--color-4, #CD06FF);
+}
+
+.form-callback__btn {
+	width: 300px;
+	height: 60px;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 28px;
+	text-transform: uppercase;
+	color: var(--color-5, #6C0287);
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 0 10px 2px var(--color-1, #fff);
+	transition: all 0.3s ease;
+}
+
+.form-callback__btn:hover {
+	transform: scale(0.95);
+	box-shadow: 0 0 20px 2px var(--color-1, #fff);
+}
+
+.form-callback__btn:focus,
+.form-callback__btn:active {
+	transform: scale(0.9);
+	box-shadow: 0 0 30px 2px var(--color-1, #fff);
+}
+
+@media (max-width: 768px) {
+	.form-callback {
+		width: 280px;
+		padding-bottom: 88px;
+	}
+
+	.form-callback__close {
+		width: 30px;
+		height: 30px;
+		top: 10px;
+		right: 10px;
+		background-size: 100% 100%;
+	}
+
+	.form-callback__input-wrapper {
+		width: 220px;
+	}
+
+	.form-callback__input {
+		height: 42px;
+	}
+
+	.form-callback__title {
+		font-size: 20px;
+	}
+
+	.form-callback__input {
+		margin-bottom: 50px;
+	}
+
+	.form-callback__btn {
+		width: 243px;
+		height: 52px;
+		font-size: 18px;
+	}
+}

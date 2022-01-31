@@ -1,0 +1,105 @@
+.burger {
+	display: none;
+}
+
+
+@media (max-width: 960px) {
+	.burger {
+		display: block;
+		position: relative;
+		width: 54px;
+		height: 29px;
+		z-index: 3;
+
+		border: none;
+		background-color: transparent;
+		padding: 0;
+	}
+
+	.burger span {
+		position: absolute;
+		background-color: var(--color-3, #6C0287);
+		border-radius: 2px;
+		position: absolute;
+		left: 0;
+		top: calc(50% - 5px/2);
+		width: 100%;
+		height: 4px;
+		transition: all 0.3s ease 0s;
+	}
+
+	.burger:before,
+	.burger:after{
+		content: '';
+		background-color: var(--color-3, #6C0287);
+		border-radius: 2px;
+		position: absolute;
+		height: 4px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+	}
+
+	.burger:before{
+		width: 100%;
+		top: 0;
+	}
+
+	.burger:after{
+		width: 22px;
+		bottom: 0;
+	}
+
+	.burger.active span{
+		transform: scale(0);
+	}
+
+	.burger.active:before{
+		transform:rotate(45deg);
+		width: 50px;
+		top: 12px;
+	}
+	.burger.active:after{
+		transform:rotate(-45deg);
+		width: 50px;
+		bottom: 12px;
+	}
+
+	
+	.burger:hover.burger:before,
+	.burger:hover.burger:after,
+	.burger:hover span {
+		background-color: var(--color-4, #CD06FF);
+	}
+
+	.burger:focus.burger:before,
+	.burger:focus.burger:after,
+	.burger:focus span {
+		background-color: var(--color-6, #840AA3);
+	}
+
+	.burger:active.burger:before,
+	.burger:active.burger:after,
+	.burger:active span {
+		background-color: var(--color-6, #840AA3);
+	}
+}
+
+@media (max-width: 576px) {
+	.burger {
+		width: 39px;
+		height: 20px;
+		margin: 0 auto;
+	}
+
+	.burger.active:before{
+		width: 28px;
+		left: 15%;
+		top: 7px;
+	}
+	.burger.active:after{
+		width: 28px;
+		left: 15%;
+		bottom: 9px;
+	}
+}
+

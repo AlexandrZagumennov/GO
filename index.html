@@ -5,20 +5,59 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+	<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 	<title>GO</title>
-	<link rel="stylesheet" href="assets/style.css">
-	<script defer src="https://api-maps.yandex.ru/2.1/?apikey=bee43767-4522-4aa7-9dac-f13bf1c89f4a&lang=ru_RU"
-		type="text/javascript"></script>
-	<script defer src="js/jquery-3.6.0.min.js"></script>
-	<script defer src="js/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+	<!--<script defer src="https://api-maps.yandex.ru/2.1/?apikey=bee43767-4522-4aa7-9dac-f13bf1c89f4a&lang=ru_RU" type="text/javascript"></script>-->
+	<!--<script defer src="js/jquery-3.6.0.min.js"></script>-->
+	<!--<script defer src="js/jquery-ui.min.js"></script>-->
 
 	<script defer src="js/burger.js"></script>
 	<script defer src="js/modal.js"></script>
+	<!--<script defer src="js/modal.js"></script>-->
 </head>
 
 <body class="page">
+
 	<header class="header">
+		<div class="container header__container">
+			<img src="img/header/logo.svg" alt="Логотип компании Game Over" class="header__logo" width="120" height="66">
+
+			<nav class="header__navigation navigation">
+				<button class="header__burger burger">
+					<span></span>
+				</button>
+
+				<div class="navigation__mobile-wrapper">
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a href="#" class="navigation__link" target="_blank">залы</a>
+						</li>
+						<li class="navigation__item">
+							<a href="#" class="navigation__link" target="_blank">О нас</a>
+						</li>
+						<li class="navigation__item">
+							<a href="#" class="navigation__link" target="_blank">Бронь</a>
+						</li>
+						<li class="navigation__item">
+							<a href="#" class="navigation__link" target="_blank">отзывы</a>
+						</li>
+						<li class="navigation__item">
+							<a href="#" class="navigation__link" target="_blank">Контакты</a>
+						</li>
+					</ul>
+
+					<button class="header__btn header__btn_mobile modal__open-mobile">Заказать звонок</button>
+				</div>
+			</nav>
+
+			<button class="header__btn modal__open">Заказать звонок</button>
+
+		</div>
+	</header>
+
+
+	<!--<header class="header">
 		<div class="container">
 			<div class="header__row">
 				<div class="header__burger"></div>
@@ -26,7 +65,7 @@
 				<nav class="header__navigation">
 					<ul class="header__list">
 						<li class="header__list-item">
-							<a href="https://my.methed.ru/pl/teach/control/lesson/view?id=220883658&editMode=0"
+							<a href="#"
 								class="header__list-link">залы</a>
 						</li>
 						<li class="header__list-item">
@@ -50,10 +89,10 @@
 					звонок</button>
 			</div>
 		</div>
-	</header>
+	</header>-->
 
 	 <main>
-		<section class="banner">
+		<!--<section class="banner">
 			<div class="container">
 				<h1 class="banner__title page__title" tabindex="0">GAME OVER</h1>
 				<div class="banner__wrapper">
@@ -67,9 +106,9 @@
 						aria-label="Кликните здесь, чтобы перейти к контенту ниже"></a>
 				</div>
 			</div>
-		</section>
+		</section>-->
 
-		<section class="games">
+		<!--<section class="games">
 			<div class="container">
 				<h2 class="games__title section-title" tabindex="0">У нас есть все для классного
 					отдыха с друзьями!</h2>
@@ -96,9 +135,9 @@
 					
 				</ul>
 			</div>
-		</section>
+		</section>-->
 
-		<section class="halls">
+		<!--<section class="halls">
 			<div class="container">
 				<h2 class="halls__title section-title" tabindex="0">Наши залы</h2>
 				<ul class="halls__list">
@@ -116,9 +155,9 @@
 					</li>
 				</ul>
 			</div>
-		</section>
+		</section>-->
 
-		<section class="booking-form">
+		<!--<section class="booking-form">
 			<div class="container">
 				<h2 class="section-title" tabindex="0">Забронировать место</h2>
 				<form action="https://jsonplaceholder.typicode.com/posts" method="POST">
@@ -264,28 +303,22 @@
 						aria-label="Для бронирования нажмите здесь">Забронировать</button>
 				</form>
 			</div>
-		</section>
+		</section>-->
 
 		<!--<section class="about">
 			<div class="container">
 				<h2 class="about__title section-title" tabindex="0">О нас</h2>
-				<div class="about__container">
-					<div class="about__item about__item_content" tabindex="0">
-						<p class="about__text section-text">Для наших гостей мы создали концептуально новое игровое
-							пространство виртуальной
-							реальности в
-							центральной части города. </p>
-						<p class="about__text section-text">Каждый день мы стараемся создавать <br> для вас самую лучшую
-							игровую атмосферу и
-							<br> радовать Вас топовыми
-							игровыми разработками <br> со всего мира.
-						</p>
-						<blockquote class="about__blockquote">
-							GAME OVER — это место незабываемых впечатлений
-						</blockquote>
-						<cite class="about__cite">
-							Аркадий Абакшин, создатель игровой территории GAME OVER
-						</cite>
+				<div class="about__container" tabindex="0">
+					<div class="about__content">
+						<div class="about__text-container"> 
+							<p class="about__text">Для наших гостей мы создали концептуально новое игровое  пространство виртуальной реальности вцентральной части города.</p>
+							<p class="about__text">Каждый день мы стараемся создавать <br> для вас самую лучшую игровую атмосферу и <br> радовать Вас топовыми игровыми разработками <br> со всего мира.</p>
+						</div>
+					
+							<blockquote class="about__blockquote">
+								GAME OVER  —  это место незабываемых впечатлений
+							</blockquote>
+							<cite class="about__cite">Аркадий Абакшин, создатель игровой территории GAME OVER</cite>
 					</div>
 				</div>
 			</div>
@@ -412,7 +445,7 @@
 	</footer>-->
 
 	<div class="modal__overlay"> 
-		<form action="https://jsonplaceholder.typicode.com/posts" class="form-callback modal__body " method="POST">
+		<form action="https://postman-echo.com/post" class="form-callback modal__body " method="POST">
 			<div class="form-callback__close modal__close"></div>
 			<h3 class="form-callback__title">Заказать звонок</h3>
 			<div class="form-callback__input-wrapper">

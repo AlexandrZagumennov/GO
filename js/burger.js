@@ -1,11 +1,11 @@
 // Мобильное меню (бургер)
 
 const body = document.querySelector('.page'),
-	  headerBurger = document.querySelector('.header__burger'),
-	  headerNavigation = document.querySelector('.header__navigation');
+	  burger = document.querySelector('.burger'),
+	  headerNavigation = document.querySelector('.navigation__mobile-wrapper');
 
-headerBurger.addEventListener('click', () => {
-	headerBurger.classList.toggle('active');
+burger.addEventListener('click', () => {
+	burger.classList.toggle('active');
 	headerNavigation.classList.toggle('active');
 	body.classList.toggle('lock');
 });
