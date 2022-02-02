@@ -1,5 +1,4 @@
 // Мобильное меню (бургер)
-
 const body = document.querySelector('.page'),
 	  burger = document.querySelector('.burger'),
 	  headerNavigation = document.querySelector('.navigation__mobile-wrapper');

@@ -1,0 +1,38 @@
+.page__title {
+	font-family: "Arial Black";
+	font-weight: 900;
+	font-size: 200px;
+	line-height: 100%;
+	letter-spacing: -0.1em;
+	text-align: center;
+}
+
+@media (max-width: 1300px) {
+	.page__title {
+		font-size: 152px; 
+	}
+}
+
+@media (max-width: 960px) {
+	.page__title {
+		font-size: 116px;
+	}
+}
+
+@media (max-width: 760px) {
+	.page__title {
+		font-size: 80px;
+	}
+}
+
+@media (max-width: 576px) {
+	.page__title {
+		font-size: 46px;
+	}
+}
+
+@media (max-width: 480px) {
+	.page__title {
+		font-size: 40px;
+	}
+}
