@@ -3,7 +3,7 @@
 }
 
 .games__container {
-	height: 566px;
+	min-height: 566px;
 }
 
 .games__title {
@@ -22,7 +22,9 @@
 	display: block;
 	width: 380px;
 	height: 228px;
-	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: contain;
 	padding-left: 40px;
 	padding-top: 166px;
 	transition-duration: 0.5s;
@@ -33,31 +35,31 @@
 }
 
 .games__list-item_game_vr {
-	background: url(../../img/games/vr.png) no-repeat;	
+	background-image: url(../../img/games/vr.png);	
 }
 
 .games__list-item_game_audio {
-	background: url(../../img/games/audio.png) no-repeat;
+	background-image: url(../../img/games/audio.png);
 	position: relative;
 	top: 70px;
 }
 
 .games__list-item_game_micro {
-	background: url(../../img/games/micro.png) no-repeat;
+	background-image: url(../../img/games/micro.png);
 }
 
 .games__list-item_game_games {
-	background: url(../../img/games/game.png) no-repeat;
+	background-image: url(../../img/games/game.png);
 }
 
 .games__list-item_game_netflix {
-	background: url(../../img/games/netflix.png) no-repeat;
+	background-image: url(../../img/games/netflix.png);
 	position: relative;
 	top: 70px;
 }
 
 .games__list-item_game_sony {
-	background: url(../../img/games/sony.png) no-repeat;
+	background-image: url(../../img/games/sony.png);
 }
 
 .games__description {
@@ -66,60 +68,93 @@
 	line-height: 28px;
 }
 
-/*@media (max-width: 1300px) {
+@media (max-width: 1300px) {
 	.games {
-		padding-bottom: calc(153px + (170 - 153) * ((100vw - 1024px) / (1300 - 1024)));
+		margin-bottom: 70px;
+	}
+
+	.games__title {
+		margin-bottom: 36px;
+	}
+
+	.games__container {
+		min-height: 426px;
+		max-width: 910px;
+		margin: 0 auto;
 	}
 
 	.games__list {
-		row-gap: calc(30px + (40 - 30) * ((100vw - 1024px) / (1300 - 1024)));
+		row-gap: 30px;
 	}
 
 	.games__list-item {
-		width: calc(287px + (380 - 287) * ((100vw - 1024px) / (1300 - 1024)));
-		height: calc(172px + (228 - 172) * ((100vw - 1024px) / (1300 - 1024)));
-		padding-left: calc(20px + (40 - 20) * ((100vw - 1024px) / (1300 - 1024))); 
-		padding-top: calc(114px + (166 - 114) * ((100vw - 1024px) / (1300 - 1024))); 
+		width: 287px;
+		height: 172px;
+		padding-left: 20px;
+		padding-top: 114px;
 	}
-
-	.games__list-item_game_audio {
-		top: calc(53px + (70 - 53) * ((100vw - 1024px) / (1300 - 1024)));
-	}
-
-	.games__list-item_game_netflix {
-		padding-top: calc(83px + (166 - 83) * ((100vw - 1024px) / (1300 - 1024))); 
-		padding-right: calc(20px + (0 - 114) * ((100vw - 1024px) / (1300 - 1024))); 
-		top: calc(53px + (70 - 53) * ((100vw - 1024px) / (1300 - 1024)));
-	}
-
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 960px) {
 	.games {
-		padding-bottom: calc(30px + (100 - 30) * ((100vw - 320px) / (1300 - 320)));
+		margin-bottom: 60px;
+	}
+
+	.games__title {
+		margin-bottom: 30px;
 	}
 
 	.games__list {
-		column-gap: calc(10px + (20 - 10) * ((100vw - 320px) / (1000 - 320))); 
-		row-gap: calc(10px + (20 - 10) * ((100vw - 320px) / (1000 - 320))); 
 		justify-content: center;
-	}
-	
-	.games__list-item  {
-		width: calc(135px + (400 - 135) * ((100vw - 320px) / (1000 - 320)));
-		height: calc(75px + (240 - 75) * ((100vw - 320px) / (1000 - 320)));
-		padding-left: calc(10px + (30 - 10) * ((100vw - 320px) / (1000 - 320))); 
-		padding-right: calc(10px + (30 - 10) * ((100vw - 320px) / (1000 - 320)));
-		padding-top: calc(30px + (132 - 30) * ((100vw - 320px) / (1000 - 320)));
+		gap: 20px;
 	}
 
-	.games__list-item_game_audio,
-	.games__list-item_game_netflix {
+	.games__list-item {
+		width: 334px;
+		height: 200px;
+		padding-left: 30px;
+		padding-top: 132px;
+	}
+
+	.games__list-item_game_audio {
 		position: static;
 	}
 
-	.games__description {
-		font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1000 - 320)));
-		line-height: calc(14px + (28 - 14) * ((100vw - 320px) / (1000 - 320)));
+	.games__list-item_game_netflix {
+		position: static;
 	}
-}*/
+}
+
+/* ! Сделать адаптив на 768!!! */
+
+@media (max-width: 480px) {
+	.games {
+		margin-bottom: 30px;
+	}
+
+	.games__title {
+		margin-bottom: 15px;
+	}
+
+	.games__container {
+		width: 280px;
+	}
+
+	.games__list {
+		gap: 8px;
+	}
+
+	.games__list-item {
+		width: 135px;
+		height: 75px;
+		padding-left: 10px;
+		padding-top: 30px;
+	}
+
+	.games__description {
+		font-size: 10px;
+		line-height: 14px;
+	}
+}
+
+
