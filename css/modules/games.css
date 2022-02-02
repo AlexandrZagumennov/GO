@@ -1,33 +1,28 @@
 .games {
-	padding-bottom: calc(100px + 70px);
+	margin-bottom: 100px;
+}
+
+.games__container {
+	height: 566px;
 }
 
 .games__title {
 	max-width: 700px;
-	margin: 0 auto;
+	margin: 0 auto 40px;
 }
 
 .games__list {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	column-gap: 20px;
 	row-gap: 40px;
-}
-
-.games__list-col {
-	display: flex;
-	flex-direction: column;
-	row-gap: 40px;
-}
-
-.games__list-col:nth-child(2) {
-	padding-top: 70px;
 }
 
 .games__list-item {
+	display: block;
 	width: 380px;
 	height: 228px;
+	background-size: 100% 100%;
 	padding-left: 40px;
 	padding-top: 166px;
 	transition-duration: 0.5s;
@@ -38,37 +33,31 @@
 }
 
 .games__list-item_game_vr {
-	background: url(img/vr.png) no-repeat;	
-	background-size: 100% 100%;
+	background: url(../../img/games/vr.png) no-repeat;	
 }
 
 .games__list-item_game_audio {
-	background: url(img/audio.png) no-repeat;
-	background-size: 100% 100%;
+	background: url(../../img/games/audio.png) no-repeat;
 	position: relative;
 	top: 70px;
 }
 
 .games__list-item_game_micro {
-	background: url(img/micro.png) no-repeat;
-	background-size: 100% 100%;
+	background: url(../../img/games/micro.png) no-repeat;
 }
 
 .games__list-item_game_games {
-	background: url(img/game.png) no-repeat;
-	background-size: 100% 100%;
+	background: url(../../img/games/game.png) no-repeat;
 }
 
 .games__list-item_game_netflix {
-	background: url(img/netflix.png) no-repeat;
-	background-size: 100% 100%;
+	background: url(../../img/games/netflix.png) no-repeat;
 	position: relative;
 	top: 70px;
 }
 
 .games__list-item_game_sony {
-	background: url(img/sony.png) no-repeat;
-	background-size: 100% 100%;
+	background: url(../../img/games/sony.png) no-repeat;
 }
 
 .games__description {
@@ -77,7 +66,7 @@
 	line-height: 28px;
 }
 
-@media (max-width: 1300px) {
+/*@media (max-width: 1300px) {
 	.games {
 		padding-bottom: calc(153px + (170 - 153) * ((100vw - 1024px) / (1300 - 1024)));
 	}
@@ -133,4 +122,4 @@
 		font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1000 - 320)));
 		line-height: calc(14px + (28 - 14) * ((100vw - 320px) / (1000 - 320)));
 	}
-}
+}*/
