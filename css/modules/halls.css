@@ -1,3 +1,11 @@
+.halls {
+	margin-bottom: 100px;
+}
+
+.halls__title {
+	margin-bottom: 40px;
+}
+
 .halls__hall-name {
 	display: block;
 	width: 220px;
@@ -11,7 +19,6 @@
 
 .halls__list {
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
 	gap: 20px;
 }
@@ -21,6 +28,9 @@
 	height: 349px;
 	padding-top: 94px;
 	transition-duration: 0.5s;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: contain;
 }
 
 .halls__list-item:hover {
@@ -28,30 +38,46 @@
 }
 
 .halls__list-item_eightysvibes {
-	background: url(img/halls-bg-80s.png) 0 0/contain no-repeat;
+	background-image: url(../../img/halls/halls-bg-80s.png);
 }
 
 .halls__list-item_neon-style {
-	background: url(img/halls-bg-ns.png) 0 0/contain no-repeat;
+	background-image: url(../../img/halls/halls-bg-ns.png) ;
 }
 
 .halls__list-item_star-wars {
-	background: url(img/halls-bg-sw.png) 0 0/contain no-repeat;
+	background-image: url(../../img/halls/halls-bg-sw.png) ;
 }
 
 .halls__list-item_wild-west {
-	background: url(img/halls-bg-ww.png) 0 0/contain no-repeat;
+	background-image: url(../../img/halls/halls-bg-ww.png) ;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1300px)  {
+	.halls {
+		margin-bottom: 70px;
+	}
+
+	.halls__title {
+		margin-bottom: 36px;
+	}
+
 	.halls__list {
 		justify-content: center;
 	} 
 
 	.halls__list-item  {
+		padding-top: 73px;
+	}
+
+	.halls__list-item:nth-child(odd) {
 		width: 441px;
 		height: 265px;
-		padding-top: 73px;
+	}
+
+	.halls__list-item:nth-child(even) {
+		width: 443px;
+		height: 267px;
 	}
 
 	.halls__hall-name {
@@ -60,34 +86,64 @@
 	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 960px) {
+	.halls {
+		margin-bottom: 62px;
+	}
+
+	.halls__title {
+		margin-bottom: 35px;
+	}
+
 	.halls__list-item  {
+		padding-top: 62px;
+		background-position: 50% 50%;
+		background-size: cover;
+	}
+
+	.halls__list-item:nth-child(odd) {
 		width: 333px;
 		height: 200px;
-		padding-top: 60px;
+	}
+
+	.halls__list-item:nth-child(even) {
+		width: 335px;
+		height: 200px;
 	}
 
 	.halls__hall-name {
 		font-size: 40px;
 		line-height: 50px;
-		width: 130px;
+		width: 121px;
 	}
 }
 
 @media (max-width: 480px) {
+	.halls {
+		margin-bottom: 30px;
+	}
+
+	.halls__title {
+		margin-bottom: 15px;
+	}
+
 	.halls__list {
 		gap: 10px;
 	}
 
 	.halls__list-item  {
-		width: 280px;
-		height: 166px;
 		padding-top: 50px;
+	}
+
+	.halls__list-item:nth-child(odd),
+	.halls__list-item:nth-child(even) {
+		width: 280px;
+		height: 168px;
 	}
 
 	.halls__hall-name {
 		font-size: 26px;
-		line-height: 34px;
-
+		line-height: 34px
 	}
 }
+

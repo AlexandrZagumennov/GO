@@ -125,8 +125,6 @@
 	}
 }
 
-/* ! Сделать адаптив на 768!!! */
-
 @media (max-width: 480px) {
 	.games {
 		margin-bottom: 30px;
@@ -137,6 +135,7 @@
 	}
 
 	.games__container {
+		min-height: auto;
 		width: 280px;
 	}
 
