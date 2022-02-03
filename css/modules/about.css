@@ -1,0 +1,339 @@
+.about {
+	padding-top: 100px;
+}
+
+.about__title {
+	margin-bottom: 40px;
+}
+
+.about__container {
+	height: 596px;
+	width: 100%;
+	background-image: url(../../img/about/about-img.png);
+	background-repeat: no-repeat;
+
+	border: 1px solid wheat;
+
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+	align-items: flex-end;
+}
+
+.about__block-top {
+	width: 500px;
+	height: 222px;
+}
+
+.about__block-bottom {
+	width: 500px;
+	height: 325px;
+	/*background-color: #b80c0c;*/
+}
+
+.about__text {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.about__text:not(:last-child) {
+	margin-bottom: 34px;
+}
+
+.about__blockquote {
+	display: block;
+	margin: 0 0 39px;
+	padding-left: 31px;
+	width: 440px;
+	font-size: 44px;
+	line-height: 50px;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.about__blockquote::after {
+	content: "\201D";
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 50px;
+	color: var(--color-3, #6C0287); 
+}
+
+.about__blockquote::before{
+	content: "\201D";
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 50px;
+	color: var(--color-3, #6C0287); 
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
+
+.about__cite {
+	display: block;
+	width: 389px;
+	height: 84px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 28px;
+	background: url(../../img/about/ArkadyAbackshin.svg) no-repeat 0 50%;
+	background-size: 80px 80px;
+	margin-left: auto;
+	padding: 0 40px 0 110px;
+}
+
+@media (max-width: 1300px) {
+	.about {
+		padding-top: 70px;
+	}
+
+	.about__title {
+		margin-bottom: 26px;
+	}
+
+	.about__container {
+		height: 438px;
+		background-size: 420px 417px;
+	}
+
+	.about__block-top {
+		width: 444px;
+		height: 195px;
+	}
+
+	.about__block-bottom{
+		width: 444px;
+		height: 217px;
+	}
+
+	.about__text {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.about__text:not(:last-child) {
+		margin-bottom: 26px;
+	}
+
+	.about__blockquote {
+		margin: 0 0 13px;
+		padding-left: 25px;
+		/*width: 440px;*/
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+	.about__blockquote::after,
+	.about__blockquote::before {
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+	.about__cite {
+		font-size: 18px;
+		line-height: 26px;
+		background-size: 70px 70px;
+	}
+	 
+}
+
+@media (max-width: 960px) {
+	.about {
+		padding-top: 60px;
+	}
+
+	.about__title {
+		margin-bottom: 30px;
+	}
+
+	.about__container {
+		height: 594px;
+		background-size: 382px 380px;
+	}
+	
+	.about__block-top {
+		width: 278px;
+		height: 380px;
+		padding-top: 66px;
+	}
+
+	.about__block-bottom{
+		width: 100%;
+		height: 184px;
+	}
+
+	.about__text {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.about__text:not(:last-child) {
+		margin-bottom: 18px;
+	}
+
+	.about__blockquote {
+		margin: 0 0 16px;
+		padding-left: 22px;
+		width: 600px;
+	}
+
+	.about__cite {
+		width: 320px;
+		padding: 0 0 0 90px;
+	}
+
+	
+}
+
+/* ! Сделать адаптив цитаты от 768px */
+
+@media (max-width: 760px) {
+	.about {
+		padding-top: 30px;
+	}
+
+	.about__title {
+		margin-bottom: 15px;
+	}
+
+	.about__container {
+		height: 587px;
+		background-size: 280px 280px;
+		background-position: 50% 50%;
+		gap: 296px;
+	}
+
+	.about__block-top {
+		padding-top: 0;
+		width: 100%;
+		height: 127px;
+	}
+
+	.about__block-bottom{
+		height: 144px;
+	}
+
+	/*.about__text {
+		font-size: 14px;
+		line-height: 18px;
+	}*/
+
+	.about__blockquote {
+		margin: 0 0 9px;
+		padding-left: 15px;
+		width: 100%;
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	.about__blockquote::after,
+	.about__blockquote::before {
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	.about__cite {
+		width: 320px;
+		padding: 0 0 0 90px;
+	}
+
+	.about__cite {
+		/*width: 389px;*/
+		height: 56px;
+		font-size: 12px;
+		line-height: 16px;
+		background-size: 56px 56px;
+		margin-left: 0;
+		padding: 10px 0 0 67px;
+	}
+}
+
+@media (max-width: 480px) {
+	.about__text {
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.about__text:not(:last-child) {
+		margin-bottom: 12px;
+	}
+}
+
+
+/*.about {
+	padding-top: 100px;
+}
+
+.about__container {
+	max-width: 100%;
+	height: 596px;
+	background:url(img/about-img.png) no-repeat;
+	border: 1px solid wheat;
+}
+
+.about__content {
+	max-width: 42%;
+	height: 596px;
+	margin-left: auto;
+	border: 1px solid red;
+}
+
+.about__text {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.about__text:not(:last-child) {
+	margin-bottom: 34px;
+}
+
+.about__text:last-child {
+	margin-bottom: 48px;
+}
+
+.about__blockquote {
+	display: block;
+	margin: 0 0 29px 0;
+	padding-left: 31px;
+	width: 440px;
+	font-size: 44px;
+	line-height: 50px;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.about__blockquote::after {
+	content: "\201D";
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 50px;
+	color: var(--color-3, #6C0287); 
+}
+
+.about__blockquote::before{
+	content: "\201D";
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 50px;
+	color: var(--color-3, #6C0287); 
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
+
+.about__cite {
+	display: block;
+	width: 389px;
+	height: 84px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 28px;
+	background: url(img/ArkadyAbackshin.svg) no-repeat 0 50%;
+	background-size: 80px 80px;
+	margin-left: auto;
+	padding: 0 40px 0 110px;
+}
+*/
