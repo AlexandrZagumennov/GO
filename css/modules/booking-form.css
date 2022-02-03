@@ -262,7 +262,15 @@
 	border: none;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1300px) {
+	.booking-form {
+		padding: 60px 0;
+	}
+
+	.booking-form__title {
+		margin-bottom: 25px;
+	}
+
 	.booking-form__subtitle {
 		padding-bottom: 26px;
 	}
@@ -295,9 +303,13 @@
 	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 960px) {
 	.booking-form {
-		padding: 60px 0;
+		padding: 50px 0;
+	}
+
+	.booking-form__title {
+		margin-bottom: 40px;
 	}
 
 	.booking-form__subtitle {
@@ -347,8 +359,8 @@
 }
 
 @media (max-width: 768px) {
-	.booking-form {
-		padding: 50px 0;
+	.booking-form__title {
+		margin-bottom: 30px;
 	}
 
 	.booking-form__fieldset-select-hall {
@@ -384,9 +396,13 @@
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
 	.booking-form {
 		padding: 30px 0;
+	}
+
+	.booking-form__title {
+		margin-bottom: 18px;
 	}
 
 	.booking-form__subtitle {
