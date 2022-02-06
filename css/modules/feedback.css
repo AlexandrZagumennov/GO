@@ -1,24 +1,49 @@
 .feedback {
-	clear: both;
+	padding-top: 100px;
 }
 
 .feedback__title {
 	margin-bottom: 40px;
 }
 
-.feedback__list {
-	max-width: 980px;
-	margin: 0 auto;
+.feedback__item {
+	cursor: pointer;
+	min-height: 319px;
+	/*max-width: 100%;*/
+	padding-left: 100px;
+	display: flex;
+}
+
+.feedback__figure {
 	display: flex;
 	flex-direction: column;
-	gap: 50px;
+	align-items: center;
+	gap: 11px;
 }
 
-.feedback__item {
+.feedback__figcaption {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.feedback__blockquote {
+	max-width: 680px;
+	padding-top: 52px;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.feedback__swiper-arrow {
+	color: var(	--color-3, #6C0287);
+	width: 46px;
+	height: 46px;
+}
+
+/*.feedback__item {
 	position: relative;
-}
+}*/
 
-.feedback__cite {
+/*.feedback__cite {
 	display: block;
 	max-width: 280px;
 	min-height: 319px;
@@ -30,9 +55,9 @@
 	line-height: 28px;
 	background-size: 280px 280px;
 	background-repeat: no-repeat;
-}
+}*/
 
-.feedback__blockquote {
+/*.feedback__blockquote {
 	margin: 0;
 	max-width: 680px;
 	display: inline-block;
@@ -43,16 +68,16 @@
 	position: absolute;
 	top: 52px;
 	left: 300px;
-}
+}*/
 
-.feedback__cite_person_ms {
-	background-image: url(img/max-samoylov.png);
-}
+/*.feedback__cite_person_ms {
+	background-image: url(../../img/feedback/max-samoylov.png);
+}*/
 
-.feedback__cite_person_og {
-	background-image: url(img/oksana-grigoryeva.png);
-}
+/*.feedback__cite_person_og {
+	background-image: url(../../img/feedback/oksana-grigoryeva.png);
+}*/
 
-.feedback__cite_person_ny {
-	background-image: url(img/nikita-yaschenko.png);
-}
+/*.feedback__cite_person_ny {
+	background-image: url(../../img/feedback//nikita-yaschenko.png);
+}*/
