@@ -202,7 +202,8 @@
 		height: 587px;
 		background-size: 280px 280px;
 		background-position: 50% 50%;
-		gap: 296px;
+		gap: 0;
+		justify-content: space-between;
 	}
 
 	.about__block-top {
@@ -215,10 +216,6 @@
 		height: 144px;
 	}
 
-	/*.about__text {
-		font-size: 14px;
-		line-height: 18px;
-	}*/
 
 	.about__blockquote {
 		margin: 0 0 9px;
@@ -235,12 +232,6 @@
 	}
 
 	.about__cite {
-		width: 320px;
-		padding: 0 0 0 90px;
-	}
-
-	.about__cite {
-		/*width: 389px;*/
 		height: 56px;
 		font-size: 12px;
 		line-height: 16px;
@@ -250,6 +241,7 @@
 	}
 }
 
+
 @media (max-width: 480px) {
 	.about__text {
 		font-size: 12px;
@@ -258,6 +250,10 @@
 
 	.about__text:not(:last-child) {
 		margin-bottom: 12px;
+	}
+
+	.about__cite {
+		width: 240px;
 	}
 }
 
