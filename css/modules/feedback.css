@@ -9,12 +9,12 @@
 .feedback__item {
 	cursor: pointer;
 	min-height: 319px;
-	/*max-width: 100%;*/
 	padding-left: 100px;
 	display: flex;
 }
 
 .feedback__figure {
+	max-width: 380px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -26,6 +26,11 @@
 	line-height: 28px;
 }
 
+.feedback__img {
+	width: 280px;
+	height: 280px;
+}
+
 .feedback__blockquote {
 	max-width: 680px;
 	padding-top: 52px;
@@ -33,51 +38,138 @@
 	line-height: 28px;
 }
 
-.feedback__swiper-arrow {
+/*.feedback__swiper-arrow {
 	color: var(	--color-3, #6C0287);
 	width: 46px;
 	height: 46px;
+}*/
+
+.feedback__slider .swiper-button-prev::after,
+.feedback__slider .swiper-button-next::after {
+	color: var(	--color-3, #6C0287);
+	font-size: 46px;
 }
 
-/*.feedback__item {
-	position: relative;
-}*/
+@media (max-width: 1300px) {
+	.feedback {
+		padding-top: 70px;
+	}
 
-/*.feedback__cite {
-	display: block;
-	max-width: 280px;
-	min-height: 319px;
-	text-align: center;
-	padding-top: 291px;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 20px;
-	line-height: 28px;
-	background-size: 280px 280px;
-	background-repeat: no-repeat;
-}*/
+	.feedback__title {
+		margin-bottom: 26px;
+	}
 
-/*.feedback__blockquote {
-	margin: 0;
-	max-width: 680px;
-	display: inline-block;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 20px;
-	line-height: 28px;
-	position: absolute;
-	top: 52px;
-	left: 300px;
-}*/
+	.feedback__item {
+		min-height: 219px;
+		padding-left: 74px;
+	}
 
-/*.feedback__cite_person_ms {
-	background-image: url(../../img/feedback/max-samoylov.png);
-}*/
+	.feedback__figure {
+		max-width: 224px;
+		gap: 21px;
+	}
 
-/*.feedback__cite_person_og {
-	background-image: url(../../img/feedback/oksana-grigoryeva.png);
-}*/
+	.feedback__img {
+		width: 172px;
+		height: 172px;
+	}
 
-/*.feedback__cite_person_ny {
-	background-image: url(../../img/feedback//nikita-yaschenko.png);
-}*/
+	.feedback__figcaption {
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	.feedback__blockquote {
+		max-width: 515px;
+		padding-top: 33px;
+		font-size: 18px;
+		line-height: 26px;
+	}
+}
+
+@media (max-width: 960px) {
+	.feedback {
+		padding-top: 60px;
+	}
+
+	.feedback__title {
+		margin-bottom: 31px;
+	}
+
+	.feedback__item {
+		min-height: 190px;
+		padding-left: 63px;
+	}
+
+	.feedback__figure {
+		max-width: 156px;
+		gap: 17px;
+	}
+
+	.feedback__img {
+		width: 153px;
+		height: 153px;
+	}
+
+	.feedback__figcaption {
+		font-size: 14px;
+		line-height: 20px;;
+	}
+
+	.feedback__blockquote {
+		max-width: 393px;
+		padding-top: 30px;
+		font-size: 16px;
+		line-height: 22px;
+	}
+}
+
+@media (max-width: 760px) {
+	.feedback {
+		padding-top: 30px;
+	}
+
+	.feedback__title {
+		margin-bottom: 15px;
+	}
+
+	.feedback__item {
+		min-height: 197px;
+		padding-left: 0;
+		flex-direction: column;
+		align-items: center;
+		gap: 16px;
+
+	}
+
+	.feedback__figure {
+		gap: 9px;
+	}
+
+	.feedback__img {
+		width: 86px;
+		height: 86px;
+	}
+
+	.feedback__blockquote {
+		max-width: 100%;
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	/* ! Разобраться со стрелками переключения слайдов */
+
+	/*.feedback__slider .swiper-button-prev::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 20px;
+	}*/
+
+	/*.feedback__slider .swiper-button-next::after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-size: 20px;
+	}*/
+}
