@@ -38,12 +38,6 @@
 	line-height: 28px;
 }
 
-/*.feedback__swiper-arrow {
-	color: var(	--color-3, #6C0287);
-	width: 46px;
-	height: 46px;
-}*/
-
 .feedback__slider .swiper-button-prev::after,
 .feedback__slider .swiper-button-next::after {
 	color: var(	--color-3, #6C0287);
@@ -155,21 +149,22 @@
 		max-width: 100%;
 		font-size: 12px;
 		line-height: 16px;
+		padding-top: 0;
+		margin: 0;
 	}
 
-	/* ! Разобраться со стрелками переключения слайдов */
-
-	/*.feedback__slider .swiper-button-prev::after {
-		position: absolute;
-		top: 0;
+	.feedback__slider .swiper-button-prev {
+		top: 30px;
 		left: 0;
-		font-size: 20px;
-	}*/
+	}
 
-	/*.feedback__slider .swiper-button-next::after {
-		position: absolute;
-		top: 0;
+	.feedback__slider .swiper-button-next {
+		top: 30px;
 		right: 0;
+	}
+
+	.feedback__slider .swiper-button-prev::after,
+	.feedback__slider .swiper-button-next::after {
 		font-size: 20px;
-	}*/
+	}
 }
