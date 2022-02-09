@@ -1,0 +1,9 @@
+.acc__description {
+	height: 0;
+	overflow: hidden;
+
+}
+
+.acc__description.active {
+	height: auto;
+}
