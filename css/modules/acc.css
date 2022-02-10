@@ -1,7 +1,7 @@
 .acc__description {
 	height: 0;
 	overflow: hidden;
-
+	transition: all .4s ease;
 }
 
 .acc__description.active {

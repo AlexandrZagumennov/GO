@@ -42,13 +42,22 @@
 	background-position: center;
 }
 
-.faq__list-item:hover .faq__list-button::after {
+.faq__list-button:hover:after {
 	background-image: url(../../img/faq/open-purple-hover.svg);
 }
 
-.faq__list-item:active .faq__list-button::after {
+.faq__list-button:active::after {
 	background-image: url(../../img/faq/close-purple-active.svg);
 }
+
+.faq__list-button.active:after {
+	background-image: url(../../img/faq/close-purple-active.svg);
+}
+
+.faq__list-button.active:hover::after {
+	background-image: url(../../img/faq/open-purple-hover.svg);
+}
+
 
 .faq__list-item:nth-child(even) .faq__list-button {
 	color: var(--color-1, #fff);
@@ -59,34 +68,185 @@
 	background-image: url(../../img/faq/open.svg);
 }
 
-.faq__list-item:nth-child(even):hover .faq__list-button::after {
+.faq__list-item:nth-child(even) .faq__list-button:hover::after {
 	background-image: url(../../img/faq/open-hover.svg);
 }
 
-.faq__list-item:nth-child(even):active .faq__list-button::after {
+.faq__list-item:nth-child(even) .faq__list-button:active::after {
 	background-image: url(../../img/faq/close-active.svg);
 }
 
-.faq__list-text {
-	transition: height .3s ease;
+.faq__list-item:nth-child(even) .faq__list-button.active::after {
+	background-image: url(../../img/faq/close-active.svg);
 }
 
-.faq__list-text.active {
+.faq__list-item:nth-child(even) .faq__list-button.active:hover::after {
+	background-image: url(../../img/faq/open-hover.svg);
+}
+
+.faq__list-description {
+	padding: 0 70px;
 	font-size: 24px;
 	line-height: 28px;
+	color: var(--color-2, #000);
+}
+
+.faq__list-description.active {
 	padding: 57px 70px 100px 69px;
 	background-color: var(--color-1, #fff);
-	color: var(--color-2, #000);
 }
 
 .faq__list-text span {
 	font-weight: bold;
 }
 
-/* ! Проверить фокус и актив в плюсике
-! Разобраться с транзишном
-*/
+@media (max-width: 1200px) {
+	.faq {
+		padding-top: 70px;
+	}
 
+	.faq__title {
+		margin-bottom: 26px;
+	}
+
+	.faq__list {
+		gap: 16px;
+	}
+
+	.faq__list-button {
+		min-height: 70px;
+		padding: 0 0 0 25px;
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.faq__list-button::after {
+		top: 12px;
+		right: 20px;
+	}
+
+	.faq__list-item:last-child {
+		display: none;
+	}
+
+	.faq__list-button:hover:after {
+		background-image: url(../../img/faq/open-purple-hover.svg);
+	}
+	
+	.faq__list-button:active::after {
+		background-image: url(../../img/faq/close-purple-active.svg);
+	}
+	
+	.faq__list-button.active:after {
+		background-image: url(../../img/faq/close-purple-active.svg);
+	}
+	
+	.faq__list-button.active:hover::after {
+		background-image: url(../../img/faq/open-purple-hover.svg);
+	}
+
+	.faq__list-description {
+		font-size: 20px;
+		line-height: 22px;
+		padding-left: 25px;
+		padding-top: 20px;
+	}
+
+	.faq__list-description.active {
+		padding-left: 25px;
+		padding-top: 20px;
+	}
+
+	.faq__list-item:nth-child(even) .faq__list-button {
+		color: var(--color-2, #000);
+		background-color: var(--color-1, #fff);
+	}
+
+	.faq__list-item:nth-child(even) .faq__list-button::after {
+		background-image: url(../../img/faq/open-purple.svg);
+	}
+	
+	.faq__list-item:nth-child(even) .faq__list-button:hover::after {
+		background-image: url(../../img/faq/open-purple-hover.svg);
+	}
+	
+	.faq__list-item:nth-child(even) .faq__list-button:active::after {
+		background-image: url(../../img/faq/close-purple-active.svg);
+	}
+	
+	.faq__list-item:nth-child(even) .faq__list-button.active::after {
+		background-image: url(../../img/faq/close-purple-active.svg);
+	}
+	
+	.faq__list-item:nth-child(even) .faq__list-button.active:hover::after {
+		background-image: url(../../img/faq/open-purple-hover.svg);
+	}
+}
+
+@media (max-width: 960px) {
+	.faq {
+		padding-top: 60px;
+	}
+
+	.faq__title {
+		margin-bottom: 30px;
+	}
+
+	.faq__list-button {
+		min-height: 70px;
+		padding: 0 0 0 54px;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.faq__list-button::after {
+		right: 65px;
+	}
+
+	.faq__list-description {
+		font-size: 18px;
+		line-height: 24px;
+		padding-left: 54px;
+	}
+
+	.faq__list-description.active {
+		padding-left: 54px;
+	}
+}
+
+@media (max-width: 576px) {
+	.faq {
+		padding-top: 30px;
+	}
+
+	.faq__title {
+		margin-bottom: 15px;
+	}
+
+	.faq__list-button {
+		min-height: 46px;
+		padding: 0 0 0 10px;
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.faq__list-button::after {
+		width: 30px;
+		height: 30px;
+		top: 7px;
+		right: 9px;
+	}
+
+	.faq__list-description {
+		font-size: 12px;
+		line-height: 16px;
+		padding-left: 10px;
+	}
+
+	.faq__list-description.active {
+		padding-left: 10px;
+	}
+}
 
 
 
