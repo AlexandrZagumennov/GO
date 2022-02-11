@@ -1,0 +1,156 @@
+.contacts {
+	background: linear-gradient(180deg, #1B1A1B -13.35%, #370A37 86.65%);
+	padding-bottom: 20px;
+}
+
+.contacts__title {
+	margin-bottom: 40px;
+}
+
+.contacts__communication {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacts__methods {
+	max-width: 340px;
+}
+
+.contacts__address,
+.contacts__phone,
+.contacts__email {
+	display: block;
+	padding-left: 60px;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	position: relative;
+	cursor: pointer;
+}
+
+.contacts__address::before,
+.contacts__phone::before,
+.contacts__email::before {
+	content: "";
+	display: block;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: all .3s ease;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.contacts__address {
+	font-style: normal;
+	margin-bottom: 36px;
+}
+
+.contacts__address::before {
+	background-image: url(../../img/contacts/location.svg);
+	top: 15px;
+}
+
+.contacts__address:hover::before {
+	background-image: url(../../img/contacts/location-hover.svg);
+}
+
+.contacts__phone {
+	margin-bottom: 11px;
+}
+
+.contacts__phone::before {
+	background-image: url(../../img/contacts/phone-call.svg);
+}
+
+.contacts__phone:hover::before {
+	background-image: url(../../img/contacts/phone-call-hover.svg);
+}
+
+.contacts__email {
+	margin-bottom: 40px;
+}
+
+.contacts__email::before {
+	background-image: url(../../img/contacts/envelope.svg);
+}
+
+.contacts__email:hover::before {
+	background-image: url(../../img/contacts/envelope-hover.svg);
+}
+
+
+
+/*
+.contacts__wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 146px;
+}
+
+.contacts__item {
+	width: 300px;
+	padding-left: 60px;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	font-style: normal;
+	cursor: pointer;
+}
+
+.contacts__item:last-child {
+	padding-left: 0;
+}
+
+.contacts__item_email {
+	display: block;
+	background: url(img/envelope.svg) no-repeat 0 50%;
+	margin-bottom: 40px;
+	transition: background-image 0.5s ease;
+}
+
+.contacts__item_email:hover {
+	background: url(img/envelope-hover.svg) no-repeat 0 50%;
+}
+
+.contacts__item_location {
+	background: url(img/location.svg) no-repeat 0 50%;
+	margin-bottom: 36px;
+	transition: background-image 0.5s ease;
+}
+
+.contacts__item_location:hover {
+	background: url(img/location-hover.svg) no-repeat 0 50%;
+}
+
+.contacts__item_phone {
+	display: block;
+	background: url(img/phone-call.svg) no-repeat 0 50%;
+	margin-bottom: 11px;
+	transition: background-image 0.5s ease;
+}
+
+.contacts__item_phone:hover {
+	background: url(img/phone-call-hover.svg) no-repeat 0 50%;
+}
+
+.contacts__title {
+	margin-bottom: 54px;
+}
+
+.contacts__wrapper_copywrite {
+	font-size: 14px;
+	line-height: 16px;
+	text-align: right;
+	margin-bottom: 0;
+}
+
+.contacts__wrapper-text {
+	margin-bottom: 6px;
+}
+
+.contacts__link:hover {
+	text-decoration: underline;
+}*/
