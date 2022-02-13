@@ -10,9 +10,10 @@
 	<link rel="stylesheet" href="css/index.css">
 	
 	<script defer src="https://api-maps.yandex.ru/2.1/?apikey=bee43767-4522-4aa7-9dac-f13bf1c89f4a&lang=ru_RU" type="text/javascript"></script>
-
 	<script defer src="libs/swiper/swiper-bundle.min.js"></script>
+	<script defer src="js/seamless-scroll-polyfill.min.js"></script>
 
+	<script defer src="js/scroll.js"></script>
 	<script defer src="js/burger.js"></script>
 	<script defer src="js/modal.js"></script>
 	<script defer src="js/swiper.js"></script>
@@ -35,19 +36,19 @@
 				<div class="navigation__mobile-wrapper">
 					<ul class="navigation__list">
 						<li class="navigation__item">
-							<a href="#" class="navigation__link" target="_blank">залы</a>
+							<a href="#halls" class="navigation__link" target="_blank">залы</a>
 						</li>
 						<li class="navigation__item">
-							<a href="#" class="navigation__link" target="_blank">О нас</a>
+							<a href="#about" class="navigation__link" target="_blank">О нас</a>
 						</li>
 						<li class="navigation__item">
-							<a href="#" class="navigation__link" target="_blank">Бронь</a>
+							<a href="#booking-form" class="navigation__link" target="_blank">Бронь</a>
 						</li>
 						<li class="navigation__item">
-							<a href="#" class="navigation__link" target="_blank">отзывы</a>
+							<a href="#feedback" class="navigation__link" target="_blank">отзывы</a>
 						</li>
 						<li class="navigation__item">
-							<a href="#" class="navigation__link" target="_blank">Контакты</a>
+							<a href="#contacts" class="navigation__link" target="_blank">Контакты</a>
 						</li>
 					</ul>
 
@@ -71,13 +72,13 @@
 						<div class="banner__row-item banner__row-item_position_right"></div>
 					</div>
 					<button class="banner__book" aria-label="Вызов формы для бронирования">забронировать</button>
-					<a href="#" class="banner__arrow-down"
+					<a href="#games" class="banner__arrow-down"
 						aria-label="Кликните здесь, чтобы перейти к контенту ниже"></a>
 				</div>
 			</div>
 		</section>
 
-		<section class="games">
+		<section id="games" class="games">
 			<div class="container">
 				<h2 class="games__title section-title" tabindex="0">У нас есть все для классного
 					отдыха с друзьями!</h2>
@@ -107,7 +108,7 @@
 			</div>
 		</section>
 
-		<section class="halls">
+		<section id="halls" class="halls">
 			<div class="container">
 				<h2 class="halls__title section-title" tabindex="0">Наши залы</h2>
 				<ul class="halls__list">
@@ -127,7 +128,7 @@
 			</div>
 		</section>
 
-		<section class="booking-form">
+		<section id="booking-form" class="booking-form">
 			<div class="container">
 				<h2 class="booking-form__title section-title" tabindex="0">Забронировать место</h2>
 				<form action="https://jsonplaceholder.typicode.com/posts" method="POST">
@@ -279,7 +280,7 @@
 			</div>
 		</section>
 
-		<section class="about">
+		<section id="about" class="about">
 			<div class="container">
 				<h2 class="about__title section-title" tabindex="0">О нас</h2>
 
@@ -300,7 +301,7 @@
 			</div>
 		</section>
 
-		<section class="feedback">
+		<section id="feedback" class="feedback">
 			<div class="container">
 				<h2 class="feedback__title section-title" tabindex="0">отзывы посетителей</h2>
 
@@ -404,7 +405,7 @@
 		</section>
 	</main>
 
-	<footer class="contacts">
+	<footer id="contacts" class="contacts">
 		<div class="container">
 			<h2 class="contacts__title section-title" tabindex="0">Контакты</h2>
 
