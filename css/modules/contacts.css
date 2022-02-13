@@ -40,6 +40,7 @@
 	transition: all .3s ease;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 .contacts__address {
@@ -80,6 +81,11 @@
 	background-image: url(../../img/contacts/envelope-hover.svg);
 }
 
+.contacts__map {
+	width: 680px;
+	height: 274px;
+}
+
 .contacts__copywrite-row {
 	padding-top: 145px;
 	padding-bottom: 20px;
@@ -114,3 +120,121 @@
 .contacts__link:hover::after {
 	display: block;
 }
+
+@media (max-width: 1300px) {
+	.contacts__title {
+		margin-bottom: 26px;
+	}
+
+	.contacts__methods {
+		max-width: 300px;
+	}
+
+	.contacts__address {
+		margin-bottom: 40px;
+	}
+
+	.contacts__phone {
+		margin-bottom: 7px;
+	}
+
+	.contacts__map {
+		width: 542px;
+	}
+	
+	.contacts__copywrite-row {
+		padding-top: 92px;
+		padding-bottom: 19px;
+	}
+}
+
+@media (max-width: 960px) {
+	.contacts__title {
+		margin-bottom: 30px;
+	}
+
+	.contacts__communication {
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+	}
+
+	.contacts__methods {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contacts__address,
+	.contacts__phone,
+	.contacts__email {
+		margin-bottom: 27px;
+		padding-left: 36px;
+	}
+
+	.contacts__address {
+		padding-left: 0;
+		text-align: center;
+	}
+
+	.contacts__address::before,
+	.contacts__phone::before,
+	.contacts__email::before {
+		width: 26px;
+		height: 26px;
+}
+
+	.contacts__address::before {
+		position: static;
+		display: inline-block;
+	}
+
+	.contacts__map {
+		width: 100%;
+		height: 337px;
+	}
+
+	.contacts__copywrite-row {
+		padding-top: 75px;
+		padding-bottom: 18px;
+	}
+}
+
+@media (max-width: 576px) {
+	.contacts__title {
+		margin-bottom: 15px;
+	}
+
+	.contacts__communication {
+		gap: 35px;
+	}
+
+	.contacts__address,
+	.contacts__phone,
+	.contacts__email {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.contacts__methods {
+		gap: 10px;
+	}
+
+	.contacts__map {
+		height: 194px;
+	}
+
+	.contacts__copywrite-row {
+		padding-top: 63px;
+		padding-bottom: 24px;
+		font-size: 12px;
+		flex-direction: column;
+		align-items: center;
+		gap: 19px;
+	}
+
+	.contacts__disign {
+		gap: 5px;
+	}
+}
+
