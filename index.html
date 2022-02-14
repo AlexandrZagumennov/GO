@@ -7,11 +7,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 	<title>GO</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 	<link rel="stylesheet" href="css/index.css">
 	
 	<script defer src="https://api-maps.yandex.ru/2.1/?apikey=bee43767-4522-4aa7-9dac-f13bf1c89f4a&lang=ru_RU" type="text/javascript"></script>
 	<script defer src="libs/swiper/swiper-bundle.min.js"></script>
 	<script defer src="js/seamless-scroll-polyfill.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+	<script defer src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+	<script defer src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+	<script defer src="libs/choices/choices.min.js"></script>
 
 	<script defer src="js/scroll.js"></script>
 	<script defer src="js/burger.js"></script>
@@ -19,6 +24,9 @@
 	<script defer src="js/swiper.js"></script>
 	<script defer src="js/acc.js"></script>
 	<script defer src="js/map.js"></script>
+	<script defer src="js/flatpickr.js"></script>
+	<script defer src="js/choices.js"></script>
+	
 </head>
 
 <body class="page">
@@ -236,16 +244,37 @@
 					<div class="booking-form__select-data">
 						<div class="booking-form__select-data-col booking-form__select-data-col_left">
 							<div class="booking-form__select-data-row">
-								<label class="booking-form__data" tabindex="0">
-									Дата
-								</label>
-								<label class="booking-form__time" tabindex="0">
-									Время
-								</label>
+									
+								<div class="booking-form__data-wrapper">
+									<input type="date" id="booking-form__data" class="booking-form__data">
+									<label for="booking-form__data" class="booking-form__data-label">Дата</label>
+								</div>
+								
+								<div class="booking-form__time-wrapper">
+									<select name="time" id="time" class="booking-form__time">
+										<option value="0">Время</option>
+										<option value="10:00-11:00" class="booking-form__timeoption">10:00-11:00</option>
+										<option value="11:00-12:00" class="booking-form__timeoption">11:00-12:00</option>
+										<option value="12:00-13:00" class="booking-form__timeoption">12:00-13:00</option>
+										<option value="13:00-14:00" class="booking-form__timeoption">13:00-14:00</option>
+										<option value="14:00-15:00" class="booking-form__timeoption">14:00-15:00</option>
+										<option value="15:00-16:00" class="booking-form__timeoption">15:00-16:00</option>
+										<option value="16:00-17:00" class="booking-form__timeoption">16:00-17:00</option>
+										<option value="17:00-18:00" class="booking-form__timeoption">17:00-18:00</option>
+										<option value="18:00-19:00" class="booking-form__timeoption">18:00-19:00</option>
+									</select>
+								</div>
 							</div>
-							<label class="booking-form__count-person" tabindex="0">
-								Сколько человек
-							</label>
+
+							<select name="count-person" id="count-person" class="booking-form__count-person">
+								<option value="0">Сколько человек</option>
+								<option value="1" class="booking-form__custom-option">1</option>
+								<option value="2" class="booking-form__custom-option">2</option>
+								<option value="3" class="booking-form__custom-option">3</option>
+								<option value="4" class="booking-form__custom-option">4 </option>
+								<option value="5" class="booking-form__custom-option">5</option>
+							</select>
+
 						</div>
 
 						<div class="booking-form__select-data-col booking-form__select-data-col_middle">

@@ -1,4 +1,5 @@
 @import url(../libs/swiper/swiper-bundle.min.css);
+@import url(../libs/choices/choices.min.css);
 
 @import url(var.css);
 @import url(normalize.css);
@@ -16,6 +17,7 @@
 @import url(modules/games.css);
 @import url(modules/halls.css);
 @import url(modules/booking-form.css);
+@import url(modules/choices.css);
 @import url(modules/about.css);
 @import url(modules/feedback.css);
 @import url(modules/faq.css);
