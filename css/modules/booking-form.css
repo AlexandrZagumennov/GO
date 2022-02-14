@@ -157,9 +157,9 @@
 }
 
 .booking-form__select-data-col_left {
-	padding-top: 12px;
+	padding-top: 22px;
 	width: 300px;
-	height: 140px;
+	height: 162px;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
@@ -225,13 +225,22 @@
 	border: none;
 }
 
+.booking-form__select-data-col_middle {
+	height: 162px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 14px;
+}
+
 .booking-form__select-data-col_right {
 	width: 300px;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
 	justify-content: space-between;
-	gap: 18px;
+	gap: 14px;
 }
 
 .booking-form__btn {
