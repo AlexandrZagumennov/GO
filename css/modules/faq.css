@@ -41,6 +41,7 @@
 	background-image: url(../../img/faq/open-purple.svg);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: contain;
 }
 
 .faq__list-button:hover:after {
@@ -90,6 +91,10 @@
 	font-size: 24px;
 	line-height: 28px;
 	color: var(--color-2, #000);
+}
+
+.faq__list-description span {
+	font-weight: bold;
 }
 
 .faq__list-description.active {
@@ -151,7 +156,6 @@
 		font-size: 20px;
 		line-height: 22px;
 		padding-left: 25px;
-		padding-top: 20px;
 	}
 
 	.faq__list-description.active {
@@ -209,14 +213,16 @@
 		font-size: 18px;
 		line-height: 24px;
 		padding-left: 54px;
+		padding-right: 54px;
 	}
 
 	.faq__list-description.active {
 		padding-left: 54px;
+		padding-right: 54px;
 	}
 }
 
-@media (max-width: 576px) {
+@media (max-width: 670px) {
 	.faq {
 		padding-top: 30px;
 		padding-bottom: 30px;
@@ -244,14 +250,21 @@
 		font-size: 12px;
 		line-height: 16px;
 		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 	.faq__list-description.active {
 		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 50px;
 	}
 }
 
-
+@media (max-width: 480px) {
+	.faq__list-button {
+		padding-right: 43px;
+	}
+}
 
 
 
