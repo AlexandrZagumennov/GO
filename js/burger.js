@@ -8,3 +8,11 @@ burger.addEventListener('click', () => {
 	body.classList.toggle('lock');
 });
 
+headerNavigation.addEventListener('click', (event) => {
+	const closeNav = event.target.closest('.navigation__link');
+
+	if (closeNav) {
+		headerNavigation.classList.remove('active');
+		burger.classList.remove('active');
+	}
+});
