@@ -389,8 +389,8 @@
 	}
 
 	.booking-form__select-data-col_right, 
-	.booking-form__select-data-row,
-	.booking-form__count-person {
+	.booking-form__select-data-col_middle,
+	.booking-form__select-data-col_right {
 		width: 280px;
 	}
 
