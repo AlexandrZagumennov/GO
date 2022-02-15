@@ -26,9 +26,36 @@
 	line-height: 28px;
 }
 
-.feedback__img {
+.feedback__img-wrapper {
 	width: 280px;
 	height: 280px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+}
+
+.feedback__img-wrapper::after {
+	display: block;
+	content: '';
+	width: 280px;
+	height: 280px;
+	background-image: url(../../img/feedback/bg.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.feedback__img-wrapper_ms {
+	background-image: url(../../img/feedback/max-samoylov.png);
+}
+
+.feedback__img-wrapper_og {
+	background-image: url(../../img/feedback/oksana-grigoryeva.png);
+}
+.feedback__img-wrapper_ny {
+	background-image: url(../../img/feedback/nikita-yaschenko.png);
 }
 
 .feedback__blockquote {
@@ -63,7 +90,8 @@
 		gap: 21px;
 	}
 
-	.feedback__img {
+	.feedback__img-wrapper,
+	.feedback__img-wrapper::after {
 		width: 172px;
 		height: 172px;
 	}
@@ -100,7 +128,8 @@
 		gap: 17px;
 	}
 
-	.feedback__img {
+	.feedback__img-wrapper,
+	.feedback__img-wrapper::after {
 		width: 153px;
 		height: 153px;
 	}
@@ -140,7 +169,8 @@
 		gap: 9px;
 	}
 
-	.feedback__img {
+	.feedback__img-wrapper,
+	.feedback__img-wrapper::after {
 		width: 86px;
 		height: 86px;
 	}
