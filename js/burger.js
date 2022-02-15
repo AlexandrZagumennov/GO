@@ -14,5 +14,6 @@ headerNavigation.addEventListener('click', (event) => {
 	if (closeNav) {
 		headerNavigation.classList.remove('active');
 		burger.classList.remove('active');
+		body.classList.remove('lock');
 	}
 });
