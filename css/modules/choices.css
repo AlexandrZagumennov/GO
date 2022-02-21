@@ -42,11 +42,13 @@
 	z-index: 1;
 }
 
+
 .choices[data-type*=select-one].is-open:after {
 	border-color: #000000 #000000 transparent transparent;
 	margin-top: -15px;
 	transform: rotate(135deg);
 }
+
 
 .choices__list--dropdown .choices__item {  
 	font-size: 18px;

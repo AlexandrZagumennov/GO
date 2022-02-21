@@ -246,34 +246,33 @@
 							<div class="booking-form__select-data-row">
 									
 								<div class="booking-form__data-wrapper">
-									<input type="date" id="booking-form__data" class="booking-form__data">
-									<label for="booking-form__data" class="booking-form__data-label">Дата</label>
+									<label for="booking-form__data" class="booking-form__data-label">Дата
+										<input type="date" name = "date" value="date" id="booking-form__data" class="booking-form__data">
+									</label>
+									
 								</div>
 								
 								<div class="booking-form__time-wrapper">
 									<select name="time" id="time" class="booking-form__time">
 										<option value="0">Время</option>
-										<option value="10:00-11:00" class="booking-form__timeoption">10:00-11:00</option>
-										<option value="11:00-12:00" class="booking-form__timeoption">11:00-12:00</option>
-										<option value="12:00-13:00" class="booking-form__timeoption">12:00-13:00</option>
-										<option value="13:00-14:00" class="booking-form__timeoption">13:00-14:00</option>
-										<option value="14:00-15:00" class="booking-form__timeoption">14:00-15:00</option>
-										<option value="15:00-16:00" class="booking-form__timeoption">15:00-16:00</option>
-										<option value="16:00-17:00" class="booking-form__timeoption">16:00-17:00</option>
-										<option value="17:00-18:00" class="booking-form__timeoption">17:00-18:00</option>
-										<option value="18:00-19:00" class="booking-form__timeoption">18:00-19:00</option>
+										<option value="10:00" class="booking-form__timeoption">10:00</option>
+										<option value="12:00" class="booking-form__timeoption">12:00</option>
+										<option value="14:00" class="booking-form__timeoption">14:00</option>
+										<option value="17:30" class="booking-form__timeoption">17:30</option>
 									</select>
 								</div>
 							</div>
 
-							<select name="count-person" id="count-person" class="booking-form__count-person">
-								<option value="0">Сколько человек</option>
-								<option value="1" class="booking-form__custom-option">1</option>
-								<option value="2" class="booking-form__custom-option">2</option>
-								<option value="3" class="booking-form__custom-option">3</option>
-								<option value="4" class="booking-form__custom-option">4 </option>
-								<option value="5" class="booking-form__custom-option">5</option>
-							</select>
+							<div class="booking-form__count-person-wrapper">
+								<select name="count-person" id="count-person" class="booking-form__count-person">
+									<option value="0">Сколько человек</option>
+									<option value="1" class="booking-form__custom-option">1</option>
+									<option value="2" class="booking-form__custom-option">2</option>
+									<option value="3" class="booking-form__custom-option">3</option>
+									<option value="4" class="booking-form__custom-option">4 </option>
+									<option value="5" class="booking-form__custom-option">5</option>
+								</select>
+							</div>
 
 						</div>
 
