@@ -10,39 +10,33 @@
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
+	border: none;
+	outline: none;
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	background-position: center;
 	background-size: contain;
 	transition: all .3s ease;
 	cursor: pointer;
 }
 
 .social__item_inst {
-	background-image: url(../../img/social/instagram/instagram-us.svg);
+	background-image: url(../../img/social/instagram/inst.svg);
 }
 
 .social__item_inst:hover {
-	background-image: url(../../img/social/instagram/instagram-hover.svg);
-}
-
-.social__item_inst:focus {
-	background-image: url(../../img/social/instagram/instagram-focus.svg);
+	background-image: url(../../img/social/instagram/inst-hover.svg);
 }
 
 .social__item_inst:active {
-	background-image: url(../../img/social/instagram/instagram-active.svg);
+	background-image: url(../../img/social/instagram/inst-active.svg);
 }
 
 .social__item_fb {
-	background-image: url(../../img/social/fb/fb-us.svg);
+	background-image: url(../../img/social/fb/fb.svg);
 }
 
 .social__item_fb:hover {
 	background-image: url(../../img/social/fb/fb-hover.svg);
-}
-
-.social__item_fb:focus {
-	background-image: url(../../img/social/fb/fb-focus.svg);
 }
 
 .social__item_fb:active {
@@ -50,33 +44,27 @@
 }
 
 .social__item_telegram {
-	background-image: url(../../img/social/telegram/telegram-us.svg);
+	background-image: url(../../img/social/telegram/telegram.svg);
 }
 
 .social__item_telegram:hover {
 	background-image: url(../../img/social/telegram/telegram-hover.svg);
 }
-.social__item_telegram:focus {
-	background-image: url(../../img/social/telegram/telegram-focus.svg);
-}
+
 .social__item_telegram:active {
-	background-image: url(i../../img/social/telegram/telegram-active.svg);
+	background-image: url(../../img/social/telegram/telegram-active.svg);
 }
 
 .social__item_vk {
-	background-image: url(../../img/social/vk/vk-us.svg);
+	background-image: url(../../img/social/vk/vk.svg);
 }
 
 .social__item_vk:hover {
 	background-image: url(../../img/social/vk/vk-hover.svg);
 }
 
-.social__item_vk:focus {
-	background-image: url(../../img/social/vk/vk-focus.svg);
-}
-
 .social__item_vk:active {
-	background: url(../../img/social/vk/vk-active.svg);
+	background-image: url(../../img/social/vk/vk-active.svg);
 }
 
 @media (max-width: 1300px) {
