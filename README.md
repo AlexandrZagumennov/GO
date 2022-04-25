@@ -26,4 +26,7 @@
 ### Ссылка на сайт:  
 https://alexandrzagumennov.github.io/GO
 
+### Посмотреть код:  
+https://github.com/AlexandrZagumennov/GO
+
 
