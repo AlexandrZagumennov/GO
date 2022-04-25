@@ -26,7 +26,6 @@
 ### Ссылка на сайт:  
 https://alexandrzagumennov.github.io/GO
 
-[go](https://alexandrzagumennov.github.io/GO){:target="_blank" rel="noopener"}
 
 
 
